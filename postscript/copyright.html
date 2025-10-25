@@ -1,492 +1,498 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh-CN" dir="ltr">
   <head>
-    <meta name="title" content="archlinux 简明指南 —— Arch Linux 安装使用教程"><link rel="icon" type="image/png" sizes="128x128" href="/favicon-128x128.png"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><meta name="keywords" href="archlinux 安装,archlinux 教程,archlinux 指南,archlinux,Arch Linux,Linux"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta property="og:type" content="website"><meta property="og:url" content="https://arch.icekylin.online/"><meta property="og:title" content="archlinux 简明指南 — Arch Linux 安装使用教程"><meta property="og:description" content="本指南包含从 archlinux 安装、显卡驱动、日常软件配置，到多媒体制作、编程等你可能需要的全部内容。让 archlinux 成为你的常用系统吧！"><meta property="og:image" content="https://arch.icekylin.online/image-400x400.png"><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://arch.icekylin.online/"><meta property="twitter:title" content="archlinux 简明指南 — Arch Linux 安装使用教程"><meta property="twitter:description" content="本指南包含从 archlinux 安装、显卡驱动、日常软件配置，到多媒体制作、编程等你可能需要的全部内容。让 archlinux 成为你的常用系统吧！"><meta property="twitter:image" content="https://arch.icekylin.online/image.jpg"><meta name="baidu-site-verification" content="code-CJJd7gooWE"><meta name="msvalidate.01" content="5F7926C2A8770A498525E9E64994663C"><meta name="360-site-verification" content="87416cd673fcfd727db0aeb869a17caf"><link rel="stylesheet" type="text/css" href="/static/css/font.css"><script>var _hmt = _hmt || [];
-(function () {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?e7059486ad3b16e21ea7058836c51b9b";
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(hm, s);
-})();</script><script>(function () {
-  var bp = document.createElement("script");
-  var curProtocol = window.location.protocol.split(":")[0];
-  if (curProtocol === "https") {
-    bp.src = "https://zz.bdstatic.com/linksubmit/push.js";
-  } else {
-    bp.src = "http://push.zhanzhang.baidu.com/push.js";
-  }
-  var s = document.getElementsByTagName("script")[0];
-  s.parentNode.insertBefore(bp, s);
-})();</script><script async="" src="https://www.googletagmanager.com/gtag/js?id=G-MQRPJQK9SC"></script><script>window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>版权说明 | archlinux 简明指南</title>
+    <meta name="description" content="本指南包含 archlinux 安装、配置、维护等，帮助新手快速上手">
+    <meta name="generator" content="VitePress v1.6.3">
+    <link rel="preload stylesheet" href="/assets/style.5e83HKgd.css" as="style">
+    <link rel="preload stylesheet" href="/vp-icons.css" as="style">
     
-gtag('config', 'G-MQRPJQK9SC');</script><title>版权说明 | archlinux 简明指南 — Arch Linux 安装使用教程</title><meta name="description" content="本指南包含从 archlinux 安装、显卡驱动、日常软件配置，到多媒体制作、编程等你可能需要的全部内容。让 archlinux 成为你的常用系统吧！"><meta charset="utf-8"><meta name="generator" content="VuePress 2.0.0-beta.15">
-    <link rel="preload" href="/assets/js/runtime~app.770a0a6a.js" as="script"><link rel="preload" href="/assets/css/styles.de5294bd.css" as="style"><link rel="preload" href="/assets/js/440.3a817dfc.js" as="script"><link rel="preload" href="/assets/js/app.e0ef27ec.js" as="script">
-    <link rel="stylesheet" href="/assets/css/styles.de5294bd.css">
+    <script type="module" src="/assets/app.4v1-Eg3k.js"></script>
+    <link rel="preload" href="/assets/inter-roman-latin.Di8DUHzh.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/assets/chunks/theme.DCyI34lI.js">
+    <link rel="modulepreload" href="/assets/chunks/framework.CDhRSyRB.js">
+    <link rel="modulepreload" href="/assets/postscript_copyright.md.C6ER7Ga7.lean.js">
+    <script src="/js/google.js"></script>
+    <script src="/js/baidu.js"></script>
+    <meta name="title" content="archlinux 简明指南 —— Arch Linux 安装使用教程">
+    <meta name="keywords" href="archlinux 指南,archlinux 教程,archlinux 安装,archlinux tutorial,archlinux guide,archlinux install,archlinux,Arch Linux,Linux,tutorial,guide,ebook">
+    <meta property="og:url" content="https://arch.icekylin.online">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="archlinux 简明指南">
+    <meta property="og:description" content="本指南包含 archlinux 安装、配置、维护等，帮助新手快速上手">
+    <meta property="og:image" content="https://arch.icekylin.online/images/og.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="arch.icekylin.online">
+    <meta property="twitter:url" content="https://arch.icekylin.online">
+    <meta property="twitter:title" content="archlinux 简明指南">
+    <meta property="twitter:description" content="本指南包含 archlinux 安装、配置、维护等，帮助新手快速上手">
+    <meta property="twitter:image" content="https://arch.icekylin.online/images/og.png">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
   </head>
   <body>
-    <div id="app"><!--[--><div class="theme-container"><header class="navbar"><div class="toggle-sidebar-button"><svg class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div><span><a href="/" class=""><img class="logo" src="/static/svg/arch-logo.svg" alt="archlinux 简明指南 — Arch Linux 安装使用教程"><span class="site-name can-hide">archlinux 简明指南 — Arch Linux 安装使用教程</span></a></span><div class="navbar-links-wrapper" style=""><!--[--><!--]--><nav class="navbar-links can-hide"><!--[--><div class="navbar-links-item"><a class="nav-link external" href="https://github.com/NakanoMikuOrg/arch-guide" rel="noopener noreferrer" target="_blank" aria-label="🍺 Github"><!--[--><!--]--> 🍺 Github <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><form class="search-box" role="search"><input type="search" placeholder="搜索" autocomplete="off" spellcheck="false" value><!----></form></div></header><div class="sidebar-mask"></div><aside class="sidebar"><nav class="navbar-links"><!--[--><div class="navbar-links-item"><a class="nav-link external" href="https://github.com/NakanoMikuOrg/arch-guide" rel="noopener noreferrer" target="_blank" aria-label="🍺 Github"><!--[--><!--]--> 🍺 Github <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-links"><!--[--><!--[--><section class="sidebar-group"><p class="sidebar-heading">🎐 千里之行</p><ul class=""><li><!--[--><a href="/prologue.html" class="nav-link sidebar-link" aria-label="序章"><!--[--><!--]--> 序章 <!--[--><!--]--></a><!----><!--]--></li></ul></section><!--]--><!--[--><section class="sidebar-group"><p class="sidebar-heading">ℹ️ 尝试之前</p><ul class=""><li><!--[--><a href="/prepare/head-on-blow.html" class="nav-link sidebar-link" aria-label="archlinux 真的适合我吗？"><!--[--><!--]--> archlinux 真的适合我吗？ <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/prepare/understand.html" class="nav-link sidebar-link" aria-label="了解 archlinux"><!--[--><!--]--> 了解 archlinux <!--[--><!--]--></a><!----><!--]--></li></ul></section><!--]--><!--[--><section class="sidebar-group"><p class="sidebar-heading">🌱 新手上路</p><ul class=""><li><!--[--><a href="/rookie/pre-install.html" class="nav-link sidebar-link" aria-label="安装前的准备"><!--[--><!--]--> 安装前的准备 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/rookie/pre-virt.html" class="nav-link sidebar-link" aria-label="虚拟机安装前的准备"><!--[--><!--]--> 虚拟机安装前的准备 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/rookie/basic-install.html" class="nav-link sidebar-link" aria-label="archlinux 基础安装"><!--[--><!--]--> archlinux 基础安装 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/rookie/basic-install-detail.html" class="nav-link sidebar-link" aria-label="基础安装详解"><!--[--><!--]--> 基础安装详解 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/rookie/desktop-env-and-app.html" class="nav-link sidebar-link" aria-label="桌面环境与常用应用"><!--[--><!--]--> 桌面环境与常用应用 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/rookie/graphic-driver.html" class="nav-link sidebar-link" aria-label="显卡驱动"><!--[--><!--]--> 显卡驱动 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/rookie/transparent.html" class="nav-link sidebar-link" aria-label="透明代理"><!--[--><!--]--> 透明代理 <!--[--><!--]--></a><!----><!--]--></li></ul></section><!--]--><!--[--><section class="sidebar-group"><p class="sidebar-heading">🛠️ 进阶话题</p><ul class=""><li><!--[--><a href="/advanced/beauty.html" class="nav-link sidebar-link" aria-label="系统美化"><!--[--><!--]--> 系统美化 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/advanced/optional-cfg-1.html" class="nav-link sidebar-link" aria-label="可选配置（基础）"><!--[--><!--]--> 可选配置（基础） <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/advanced/optional-cfg-2.html" class="nav-link sidebar-link" aria-label="可选配置（进阶）"><!--[--><!--]--> 可选配置（进阶） <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/advanced/system-ctl.html" class="nav-link sidebar-link" aria-label="Linux 日常操作与基础知识"><!--[--><!--]--> Linux 日常操作与基础知识 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/advanced/debug.html" class="nav-link sidebar-link" aria-label="常见问题排除与解决"><!--[--><!--]--> 常见问题排除与解决 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/advanced/power-ctl.html" class="nav-link sidebar-link" aria-label="功耗控制"><!--[--><!--]--> 功耗控制 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/advanced/btrfs.html" class="nav-link sidebar-link" aria-label="Btrfs 介绍与相关操作"><!--[--><!--]--> Btrfs 介绍与相关操作 <!--[--><!--]--></a><!----><!--]--></li></ul></section><!--]--><!--[--><section class="sidebar-group"><p class="sidebar-heading">📐 办公娱乐</p><ul class=""><li><!--[--><a href="/play-and-office/office.html" class="nav-link sidebar-link" aria-label="办公日常"><!--[--><!--]--> 办公日常 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/play-and-office/media.html" class="nav-link sidebar-link" aria-label="视频影音"><!--[--><!--]--> 视频影音 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/play-and-office/play.html" class="nav-link sidebar-link" aria-label="娱乐软件"><!--[--><!--]--> 娱乐软件 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/play-and-office/android.html" class="nav-link sidebar-link" aria-label="安卓刷机"><!--[--><!--]--> 安卓刷机 <!--[--><!--]--></a><!----><!--]--></li></ul></section><!--]--><!--[--><section class="sidebar-group"><p class="sidebar-heading">🔬 专有领域</p><ul class=""><li><!--[--><a href="/exclusive/media.html" class="nav-link sidebar-link" aria-label="直播与自媒体"><!--[--><!--]--> 直播与自媒体 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/exclusive/code.html" class="nav-link sidebar-link" aria-label="编程软件"><!--[--><!--]--> 编程软件 <!--[--><!--]--></a><!----><!--]--></li></ul></section><!--]--><!--[--><section class="sidebar-group"><p class="sidebar-heading active">🍰 写在后面</p><ul class=""><li><!--[--><a href="/postscript/contributor-covenant.html" class="nav-link sidebar-link" aria-label="贡献者公约"><!--[--><!--]--> 贡献者公约 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a href="/postscript/contribute.html" class="nav-link sidebar-link" aria-label="贡献指南"><!--[--><!--]--> 贡献指南 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a aria-current="page" href="/postscript/copyright.html" class="router-link-active router-link-exact-active nav-link router-link-active sidebar-link active" aria-label="版权说明"><!--[--><!--]--> 版权说明 <!--[--><!--]--></a><ul class="sidebar-sub-headers"><li><!--[--><a aria-current="page" href="/postscript/copyright.html#🎶-捧着一颗心来-不带半棵草去" class="router-link-active router-link-exact-active nav-link sidebar-link" aria-label="🎶 捧着一颗心来，不带半棵草去"><!--[--><!--]--> 🎶 捧着一颗心来，不带半棵草去 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a aria-current="page" href="/postscript/copyright.html#🔖-这一节将会讨论" class="router-link-active router-link-exact-active nav-link sidebar-link" aria-label="🔖 这一节将会讨论："><!--[--><!--]--> 🔖 这一节将会讨论： <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a aria-current="page" href="/postscript/copyright.html#原作信息" class="router-link-active router-link-exact-active nav-link sidebar-link" aria-label="原作信息"><!--[--><!--]--> 原作信息 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a aria-current="page" href="/postscript/copyright.html#本作信息" class="router-link-active router-link-exact-active nav-link sidebar-link" aria-label="本作信息"><!--[--><!--]--> 本作信息 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a aria-current="page" href="/postscript/copyright.html#本作贡献者" class="router-link-active router-link-exact-active nav-link sidebar-link" aria-label="本作贡献者"><!--[--><!--]--> 本作贡献者 <!--[--><!--]--></a><!----><!--]--></li><li><!--[--><a aria-current="page" href="/postscript/copyright.html#特殊说明" class="router-link-active router-link-exact-active nav-link sidebar-link" aria-label="特殊说明"><!--[--><!--]--> 特殊说明 <!--[--><!--]--></a><!----><!--]--></li></ul><!--]--></li><li><!--[--><a href="/postscript/about.html" class="nav-link sidebar-link" aria-label="附录"><!--[--><!--]--> 附录 <!--[--><!--]--></a><!----><!--]--></li></ul></section><!--]--><!--]--></ul><!--[--><!--]--></aside><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h1 id="版权说明"><a class="header-anchor" href="#版权说明">#</a> 版权说明</h1><blockquote><h3 id="🎶-捧着一颗心来-不带半棵草去"><a class="header-anchor" href="#🎶-捧着一颗心来-不带半棵草去">#</a> 🎶 捧着一颗心来，不带半棵草去</h3><p>本小节记录指南涉及的一些版权信息</p></blockquote><blockquote><h3 id="🔖-这一节将会讨论"><a class="header-anchor" href="#🔖-这一节将会讨论">#</a> 🔖 这一节将会讨论：</h3><nav class="table-of-contents"><ul><li><a aria-current="page" href="/postscript/copyright.html#🎶-捧着一颗心来-不带半棵草去" class="router-link-active router-link-exact-active">🎶 捧着一颗心来，不带半棵草去</a></li><li><a aria-current="page" href="/postscript/copyright.html#🔖-这一节将会讨论" class="router-link-active router-link-exact-active">🔖 这一节将会讨论：</a></li><li><a aria-current="page" href="/postscript/copyright.html#原作信息" class="router-link-active router-link-exact-active">原作信息</a><ul><li><a aria-current="page" href="/postscript/copyright.html#原作贡献者" class="router-link-active router-link-exact-active">原作贡献者</a></li><li><a aria-current="page" href="/postscript/copyright.html#原作许可证" class="router-link-active router-link-exact-active">原作许可证</a></li><li><a aria-current="page" href="/postscript/copyright.html#特别声明" class="router-link-active router-link-exact-active">特别声明</a></li></ul></li><li><a aria-current="page" href="/postscript/copyright.html#本作信息" class="router-link-active router-link-exact-active">本作信息</a></li><li><a aria-current="page" href="/postscript/copyright.html#本作贡献者" class="router-link-active router-link-exact-active">本作贡献者</a></li><li><a aria-current="page" href="/postscript/copyright.html#特殊说明" class="router-link-active router-link-exact-active">特殊说明</a><ul><li><a aria-current="page" href="/postscript/copyright.html#字体" class="router-link-active router-link-exact-active">字体</a></li></ul></li></ul></nav></blockquote><h2 id="原作信息"><a class="header-anchor" href="#原作信息">#</a> 原作信息</h2><p>本指南派生自 <a href="https://github.com/ArchLinuxStudio/ArchLinuxTutorial" target="_blank" rel="noopener noreferrer">Arch Linux 安装使用教程<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a>。</p><h3 id="原作贡献者"><a class="header-anchor" href="#原作贡献者">#</a> 原作贡献者</h3><ul><li><a href="https://github.com/wallena3" target="_blank" rel="noopener noreferrer">Kagarino Kirie<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></li><li><a href="https://github.com/hibobmaster" target="_blank" rel="noopener noreferrer">hibobmaster<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></li><li><a href="https://github.com/Chumo2791" target="_blank" rel="noopener noreferrer">Chumo2791<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></li><li><a href="https://github.com/JimMoen" target="_blank" rel="noopener noreferrer">JimMoen<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></li><li><a href="https://github.com/livrth" target="_blank" rel="noopener noreferrer">livrth<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></li><li><a href="https://github.com/ConanEdogawa1" target="_blank" rel="noopener noreferrer">ConanEdogawa1<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></li></ul><h3 id="原作许可证"><a class="header-anchor" href="#原作许可证">#</a> 原作许可证</h3><p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer"><img src="/assets/img/by-sa.b447978a.svg" alt="by-sa"><span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></p><p>原作采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer">知识共享署名-相同方式共享 4.0 国际许可协议<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a> 进行许可。</p><h3 id="特别声明"><a class="header-anchor" href="#特别声明">#</a> 特别声明</h3><p>本作品所有观点仅代表本项目贡献者观点，<strong>许可人不为本指南的观点、示例或任何行为背书</strong>。</p><h2 id="本作信息"><a class="header-anchor" href="#本作信息">#</a> 本作信息</h2><p><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer"><img src="/assets/img/by-sa.b447978a.svg" alt="by-sa"><span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></p><p>网站源代码采用 MIT 许可证；未经特殊说明，本作品采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noopener noreferrer">知识共享署名-相同方式共享 4.0 国际许可协议<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a> 进行许可。</p><details class="custom-container details"><summary>LICENCE</summary><div class="language-LICENCE ext-LICENCE line-numbers-mode"><pre class="language-LICENCE"><code>Attribution-ShareAlike 4.0 International
-
-=======================================================================
-
-Creative Commons Corporation (&quot;Creative Commons&quot;) is not a law firm and
-does not provide legal services or legal advice. Distribution of
-Creative Commons public licenses does not create a lawyer-client or
-other relationship. Creative Commons makes its licenses and related
-information available on an &quot;as-is&quot; basis. Creative Commons gives no
-warranties regarding its licenses, any material licensed under their
-terms and conditions, or any related information. Creative Commons
-disclaims all liability for damages resulting from their use to the
-fullest extent possible.
-
-Using Creative Commons Public Licenses
-
-Creative Commons public licenses provide a standard set of terms and
-conditions that creators and other rights holders may use to share
-original works of authorship and other material subject to copyright
-and certain other rights specified in the public license below. The
-following considerations are for informational purposes only, are not
-exhaustive, and do not form part of our licenses.
-
-     Considerations for licensors: Our public licenses are
-     intended for use by those authorized to give the public
-     permission to use material in ways otherwise restricted by
-     copyright and certain other rights. Our licenses are
-     irrevocable. Licensors should read and understand the terms
-     and conditions of the license they choose before applying it.
-     Licensors should also secure all rights necessary before
-     applying our licenses so that the public can reuse the
-     material as expected. Licensors should clearly mark any
-     material not subject to the license. This includes other CC-
-     licensed material, or material used under an exception or
-     limitation to copyright. More considerations for licensors:
-	wiki.creativecommons.org/Considerations_for_licensors
-
-     Considerations for the public: By using one of our public
-     licenses, a licensor grants the public permission to use the
-     licensed material under specified terms and conditions. If
-     the licensor&#39;s permission is not necessary for any reason--for
-     example, because of any applicable exception or limitation to
-     copyright--then that use is not regulated by the license. Our
-     licenses grant only permissions under copyright and certain
-     other rights that a licensor has authority to grant. Use of
-     the licensed material may still be restricted for other
-     reasons, including because others have copyright or other
-     rights in the material. A licensor may make special requests,
-     such as asking that all changes be marked or described.
-     Although not required by our licenses, you are encouraged to
-     respect those requests where reasonable. More_considerations
-     for the public:
-	wiki.creativecommons.org/Considerations_for_licensees
-
-=======================================================================
-
-Creative Commons Attribution-ShareAlike 4.0 International Public
-License
-
-By exercising the Licensed Rights (defined below), You accept and agree
-to be bound by the terms and conditions of this Creative Commons
-Attribution-ShareAlike 4.0 International Public License (&quot;Public
-License&quot;). To the extent this Public License may be interpreted as a
-contract, You are granted the Licensed Rights in consideration of Your
-acceptance of these terms and conditions, and the Licensor grants You
-such rights in consideration of benefits the Licensor receives from
-making the Licensed Material available under these terms and
-conditions.
-
-
-Section 1 -- Definitions.
-
-  a. Adapted Material means material subject to Copyright and Similar
-     Rights that is derived from or based upon the Licensed Material
-     and in which the Licensed Material is translated, altered,
-     arranged, transformed, or otherwise modified in a manner requiring
-     permission under the Copyright and Similar Rights held by the
-     Licensor. For purposes of this Public License, where the Licensed
-     Material is a musical work, performance, or sound recording,
-     Adapted Material is always produced where the Licensed Material is
-     synched in timed relation with a moving image.
-
-  b. Adapter&#39;s License means the license You apply to Your Copyright
-     and Similar Rights in Your contributions to Adapted Material in
-     accordance with the terms and conditions of this Public License.
-
-  c. BY-SA Compatible License means a license listed at
-     creativecommons.org/compatiblelicenses, approved by Creative
-     Commons as essentially the equivalent of this Public License.
-
-  d. Copyright and Similar Rights means copyright and/or similar rights
-     closely related to copyright including, without limitation,
-     performance, broadcast, sound recording, and Sui Generis Database
-     Rights, without regard to how the rights are labeled or
-     categorized. For purposes of this Public License, the rights
-     specified in Section 2(b)(1)-(2) are not Copyright and Similar
-     Rights.
-
-  e. Effective Technological Measures means those measures that, in the
-     absence of proper authority, may not be circumvented under laws
-     fulfilling obligations under Article 11 of the WIPO Copyright
-     Treaty adopted on December 20, 1996, and/or similar international
-     agreements.
-
-  f. Exceptions and Limitations means fair use, fair dealing, and/or
-     any other exception or limitation to Copyright and Similar Rights
-     that applies to Your use of the Licensed Material.
-
-  g. License Elements means the license attributes listed in the name
-     of a Creative Commons Public License. The License Elements of this
-     Public License are Attribution and ShareAlike.
-
-  h. Licensed Material means the artistic or literary work, database,
-     or other material to which the Licensor applied this Public
-     License.
-
-  i. Licensed Rights means the rights granted to You subject to the
-     terms and conditions of this Public License, which are limited to
-     all Copyright and Similar Rights that apply to Your use of the
-     Licensed Material and that the Licensor has authority to license.
-
-  j. Licensor means the individual(s) or entity(ies) granting rights
-     under this Public License.
-
-  k. Share means to provide material to the public by any means or
-     process that requires permission under the Licensed Rights, such
-     as reproduction, public display, public performance, distribution,
-     dissemination, communication, or importation, and to make material
-     available to the public including in ways that members of the
-     public may access the material from a place and at a time
-     individually chosen by them.
-
-  l. Sui Generis Database Rights means rights other than copyright
-     resulting from Directive 96/9/EC of the European Parliament and of
-     the Council of 11 March 1996 on the legal protection of databases,
-     as amended and/or succeeded, as well as other essentially
-     equivalent rights anywhere in the world.
-
-  m. You means the individual or entity exercising the Licensed Rights
-     under this Public License. Your has a corresponding meaning.
-
-
-Section 2 -- Scope.
-
-  a. License grant.
-
-       1. Subject to the terms and conditions of this Public License,
-          the Licensor hereby grants You a worldwide, royalty-free,
-          non-sublicensable, non-exclusive, irrevocable license to
-          exercise the Licensed Rights in the Licensed Material to:
-
-            a. reproduce and Share the Licensed Material, in whole or
-               in part; and
-
-            b. produce, reproduce, and Share Adapted Material.
-
-       2. Exceptions and Limitations. For the avoidance of doubt, where
-          Exceptions and Limitations apply to Your use, this Public
-          License does not apply, and You do not need to comply with
-          its terms and conditions.
-
-       3. Term. The term of this Public License is specified in Section
-          6(a).
-
-       4. Media and formats; technical modifications allowed. The
-          Licensor authorizes You to exercise the Licensed Rights in
-          all media and formats whether now known or hereafter created,
-          and to make technical modifications necessary to do so. The
-          Licensor waives and/or agrees not to assert any right or
-          authority to forbid You from making technical modifications
-          necessary to exercise the Licensed Rights, including
-          technical modifications necessary to circumvent Effective
-          Technological Measures. For purposes of this Public License,
-          simply making modifications authorized by this Section 2(a)
-          (4) never produces Adapted Material.
-
-       5. Downstream recipients.
-
-            a. Offer from the Licensor -- Licensed Material. Every
-               recipient of the Licensed Material automatically
-               receives an offer from the Licensor to exercise the
-               Licensed Rights under the terms and conditions of this
-               Public License.
-
-            b. Additional offer from the Licensor -- Adapted Material.
-               Every recipient of Adapted Material from You
-               automatically receives an offer from the Licensor to
-               exercise the Licensed Rights in the Adapted Material
-               under the conditions of the Adapter&#39;s License You apply.
-
-            c. No downstream restrictions. You may not offer or impose
-               any additional or different terms or conditions on, or
-               apply any Effective Technological Measures to, the
-               Licensed Material if doing so restricts exercise of the
-               Licensed Rights by any recipient of the Licensed
-               Material.
-
-       6. No endorsement. Nothing in this Public License constitutes or
-          may be construed as permission to assert or imply that You
-          are, or that Your use of the Licensed Material is, connected
-          with, or sponsored, endorsed, or granted official status by,
-          the Licensor or others designated to receive attribution as
-          provided in Section 3(a)(1)(A)(i).
-
-  b. Other rights.
-
-       1. Moral rights, such as the right of integrity, are not
-          licensed under this Public License, nor are publicity,
-          privacy, and/or other similar personality rights; however, to
-          the extent possible, the Licensor waives and/or agrees not to
-          assert any such rights held by the Licensor to the limited
-          extent necessary to allow You to exercise the Licensed
-          Rights, but not otherwise.
-
-       2. Patent and trademark rights are not licensed under this
-          Public License.
-
-       3. To the extent possible, the Licensor waives any right to
-          collect royalties from You for the exercise of the Licensed
-          Rights, whether directly or through a collecting society
-          under any voluntary or waivable statutory or compulsory
-          licensing scheme. In all other cases the Licensor expressly
-          reserves any right to collect such royalties.
-
-
-Section 3 -- License Conditions.
-
-Your exercise of the Licensed Rights is expressly made subject to the
-following conditions.
-
-  a. Attribution.
-
-       1. If You Share the Licensed Material (including in modified
-          form), You must:
-
-            a. retain the following if it is supplied by the Licensor
-               with the Licensed Material:
-
-                 i. identification of the creator(s) of the Licensed
-                    Material and any others designated to receive
-                    attribution, in any reasonable manner requested by
-                    the Licensor (including by pseudonym if
-                    designated);
-
-                ii. a copyright notice;
-
-               iii. a notice that refers to this Public License;
-
-                iv. a notice that refers to the disclaimer of
-                    warranties;
-
-                 v. a URI or hyperlink to the Licensed Material to the
-                    extent reasonably practicable;
-
-            b. indicate if You modified the Licensed Material and
-               retain an indication of any previous modifications; and
-
-            c. indicate the Licensed Material is licensed under this
-               Public License, and include the text of, or the URI or
-               hyperlink to, this Public License.
-
-       2. You may satisfy the conditions in Section 3(a)(1) in any
-          reasonable manner based on the medium, means, and context in
-          which You Share the Licensed Material. For example, it may be
-          reasonable to satisfy the conditions by providing a URI or
-          hyperlink to a resource that includes the required
-          information.
-
-       3. If requested by the Licensor, You must remove any of the
-          information required by Section 3(a)(1)(A) to the extent
-          reasonably practicable.
-
-  b. ShareAlike.
-
-     In addition to the conditions in Section 3(a), if You Share
-     Adapted Material You produce, the following conditions also apply.
-
-       1. The Adapter&#39;s License You apply must be a Creative Commons
-          license with the same License Elements, this version or
-          later, or a BY-SA Compatible License.
-
-       2. You must include the text of, or the URI or hyperlink to, the
-          Adapter&#39;s License You apply. You may satisfy this condition
-          in any reasonable manner based on the medium, means, and
-          context in which You Share Adapted Material.
-
-       3. You may not offer or impose any additional or different terms
-          or conditions on, or apply any Effective Technological
-          Measures to, Adapted Material that restrict exercise of the
-          rights granted under the Adapter&#39;s License You apply.
-
-
-Section 4 -- Sui Generis Database Rights.
-
-Where the Licensed Rights include Sui Generis Database Rights that
-apply to Your use of the Licensed Material:
-
-  a. for the avoidance of doubt, Section 2(a)(1) grants You the right
-     to extract, reuse, reproduce, and Share all or a substantial
-     portion of the contents of the database;
-
-  b. if You include all or a substantial portion of the database
-     contents in a database in which You have Sui Generis Database
-     Rights, then the database in which You have Sui Generis Database
-     Rights (but not its individual contents) is Adapted Material,
-
-     including for purposes of Section 3(b); and
-  c. You must comply with the conditions in Section 3(a) if You Share
-     all or a substantial portion of the contents of the database.
-
-For the avoidance of doubt, this Section 4 supplements and does not
-replace Your obligations under this Public License where the Licensed
-Rights include other Copyright and Similar Rights.
-
-
-Section 5 -- Disclaimer of Warranties and Limitation of Liability.
-
-  a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE
-     EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS
-     AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF
-     ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,
-     IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,
-     WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR
-     PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,
-     ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT
-     KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT
-     ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.
-
-  b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE
-     TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION,
-     NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,
-     INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,
-     COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR
-     USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN
-     ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR
-     DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR
-     IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.
-
-  c. The disclaimer of warranties and limitation of liability provided
-     above shall be interpreted in a manner that, to the extent
-     possible, most closely approximates an absolute disclaimer and
-     waiver of all liability.
-
-
-Section 6 -- Term and Termination.
-
-  a. This Public License applies for the term of the Copyright and
-     Similar Rights licensed here. However, if You fail to comply with
-     this Public License, then Your rights under this Public License
-     terminate automatically.
-
-  b. Where Your right to use the Licensed Material has terminated under
-     Section 6(a), it reinstates:
-
-       1. automatically as of the date the violation is cured, provided
-          it is cured within 30 days of Your discovery of the
-          violation; or
-
-       2. upon express reinstatement by the Licensor.
-
-     For the avoidance of doubt, this Section 6(b) does not affect any
-     right the Licensor may have to seek remedies for Your violations
-     of this Public License.
-
-  c. For the avoidance of doubt, the Licensor may also offer the
-     Licensed Material under separate terms or conditions or stop
-     distributing the Licensed Material at any time; however, doing so
-     will not terminate this Public License.
-
-  d. Sections 1, 5, 6, 7, and 8 survive termination of this Public
-     License.
-
-
-Section 7 -- Other Terms and Conditions.
-
-  a. The Licensor shall not be bound by any additional or different
-     terms or conditions communicated by You unless expressly agreed.
-
-  b. Any arrangements, understandings, or agreements regarding the
-     Licensed Material not stated herein are separate from and
-     independent of the terms and conditions of this Public License.
-
-
-Section 8 -- Interpretation.
-
-  a. For the avoidance of doubt, this Public License does not, and
-     shall not be interpreted to, reduce, limit, restrict, or impose
-     conditions on any use of the Licensed Material that could lawfully
-     be made without permission under this Public License.
-
-  b. To the extent possible, if any provision of this Public License is
-     deemed unenforceable, it shall be automatically reformed to the
-     minimum extent necessary to make it enforceable. If the provision
-     cannot be reformed, it shall be severed from this Public License
-     without affecting the enforceability of the remaining terms and
-     conditions.
-
-  c. No term or condition of this Public License will be waived and no
-     failure to comply consented to unless expressly agreed to by the
-     Licensor.
-
-  d. Nothing in this Public License constitutes or may be interpreted
-     as a limitation upon, or waiver of, any privileges and immunities
-     that apply to the Licensor or You, including from the legal
-     processes of any jurisdiction or authority.
-
-
-=======================================================================
-
-Creative Commons is not a party to its public
-licenses. Notwithstanding, Creative Commons may elect to apply one of
-its public licenses to material it publishes and in those instances
-will be considered the “Licensor.” The text of the Creative Commons
-public licenses is dedicated to the public domain under the CC0 Public
-Domain Dedication. Except for the limited purpose of indicating that
-material is shared under a Creative Commons public license or as
-otherwise permitted by the Creative Commons policies published at
-creativecommons.org/policies, Creative Commons does not authorize the
-use of the trademark &quot;Creative Commons&quot; or any other trademark or logo
-of Creative Commons without its prior written consent including,
-without limitation, in connection with any unauthorized modifications
-to any of its public licenses or any other arrangements,
-understandings, or agreements concerning use of licensed material. For
-the avoidance of doubt, this paragraph does not form part of the
-public licenses.
-
-Creative Commons may be contacted at creativecommons.org.
-</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br><span class="line-number">369</span><br><span class="line-number">370</span><br><span class="line-number">371</span><br><span class="line-number">372</span><br><span class="line-number">373</span><br><span class="line-number">374</span><br><span class="line-number">375</span><br><span class="line-number">376</span><br><span class="line-number">377</span><br><span class="line-number">378</span><br><span class="line-number">379</span><br><span class="line-number">380</span><br><span class="line-number">381</span><br><span class="line-number">382</span><br><span class="line-number">383</span><br><span class="line-number">384</span><br><span class="line-number">385</span><br><span class="line-number">386</span><br><span class="line-number">387</span><br><span class="line-number">388</span><br><span class="line-number">389</span><br><span class="line-number">390</span><br><span class="line-number">391</span><br><span class="line-number">392</span><br><span class="line-number">393</span><br><span class="line-number">394</span><br><span class="line-number">395</span><br><span class="line-number">396</span><br><span class="line-number">397</span><br><span class="line-number">398</span><br><span class="line-number">399</span><br><span class="line-number">400</span><br><span class="line-number">401</span><br><span class="line-number">402</span><br><span class="line-number">403</span><br><span class="line-number">404</span><br><span class="line-number">405</span><br><span class="line-number">406</span><br><span class="line-number">407</span><br><span class="line-number">408</span><br><span class="line-number">409</span><br><span class="line-number">410</span><br><span class="line-number">411</span><br><span class="line-number">412</span><br><span class="line-number">413</span><br><span class="line-number">414</span><br><span class="line-number">415</span><br><span class="line-number">416</span><br><span class="line-number">417</span><br><span class="line-number">418</span><br><span class="line-number">419</span><br><span class="line-number">420</span><br><span class="line-number">421</span><br><span class="line-number">422</span><br><span class="line-number">423</span><br><span class="line-number">424</span><br><span class="line-number">425</span><br><span class="line-number">426</span><br><span class="line-number">427</span><br></div></div></details><h2 id="本作贡献者"><a class="header-anchor" href="#本作贡献者">#</a> 本作贡献者</h2><ul><li><a href="https://github.com/ice-kylin" target="_blank" rel="noopener noreferrer">icekylin<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></li><li><a href="https://github.com/LagrangeOranges" target="_blank" rel="noopener noreferrer">LinuXP<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></li></ul><h2 id="特殊说明"><a class="header-anchor" href="#特殊说明">#</a> 特殊说明</h2><h3 id="字体"><a class="header-anchor" href="#字体">#</a> 字体</h3><ul><li><p><a href="https://developer.harmonyos.com/cn/docs/design/des-guides/font-0000001157868583" target="_blank" rel="noopener noreferrer">HarmonyOS Sans Fonts<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></p><ul><li>© 2021 Huawei Device Co., Ltd.</li><li>HarmonyOS Sans Fonts Software is licensed under HarmonyOS Sans Fonts License Agreement.</li></ul></li></ul><details class="custom-container details"><summary>LICENCE</summary><div class="language-LICENCE ext-LICENCE line-numbers-mode"><pre class="language-LICENCE"><code>License Notice
-Copyright 2021 Huawei Device Co., Ltd.
-HarmonyOS Sans Fonts Software is licensed under HarmonyOS Sans Fonts License Agreement.
-
---------------------------------------------------------------------------------
-HarmonyOS Sans Fonts License Agreement
-
-THIS HARMONYOS SANS FONTS LICENSE AGREEMENT (&quot;AGREEMENT&quot;) IS A LEGAL AGREEMENT BETWEEN YOU (EITHER A SINGLE INDIVIDUAL, OR SINGLE LEGAL ENTITY) AND HUAWEI DEVICE CO., LTD.( &quot;LICENSOR&quot;)FOR THE USE OF THE HARMONYOS SANS FONTS ACCOMPANYING THIS AGREEMENT.BY DOWNLOADING,COPYING OR OTHERWISE USING HARMONYOS SANS FONTS YOU INDICATE THAT YOU AGREE TO BE BOUND BY ALL OF THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, YOU MAY NOT DOWNLOAD, COPY OR OTHERWISE USE THE HARMONYOS SANS FONTS, AND YOU SHALL PROMPTLY DESTROY AND DELETE ALL THE HARMONYOS SANS FONTS.
-
-1.Definition
-&quot;HarmonyOS Sans Fonts&quot; shall mean the collection of fonts software components provided by Licensor under this Agreement and clearly marked as &quot;HarmonyOS¬ Sans&quot;.
-
-&quot;YOU&quot; shall mean an individual or legal entity exercising permissions granted by this Agreement.
-
-2.GRANT OF LICENSE
-
-Subject to the terms and conditions of this Agreement, Licensor hereby grant YOU a non-transferable, non-exclusive, royalty-free, revocable, worldwide copyright license to use,copy, merge, embed, bundle, redistribute and/or sell unmodified copies of HarmonyOS Sans Fonts with any software except for fonts software，subject to the  following conditions:
-1)YOU shall make a prominent notice in the software to state that HarmonyOS Sans Fonts are used.
-2)YOU may not make any modifications to HarmonyOS Sans Fonts or any of their individual components.
-3)Neither HarmonyOS Sans Fonts nor any of their individual components may be redistributed or sold in a stand-alone base. This limitation does not apply to any work created by using HarmonyOS Sans Fonts. You can freely distribute or sell your work, such as materials, logos, application software etc. created by using HarmonyOS Sans Fonts.
-4)YOU shall retain the copyright notice and this Agreement in any copies of HarmonyOS Sans Fonts.
-
-3.Termination
-This Agreement will be automatically terminated if YOU breach any of this Agreement.
-
-4.NO WARRANTY
-YOU AGREE THAT THE HARMONYOS SANS FONTS ARE PROVIDED BY LICENSOR ON AN &quot;AS IS&quot; BASIS. LICENSOR MAKES NO WARRANTY, EXPRESSED OR IMPLIED OR STATUTORY, WITH RESPECT TO ANY OF THE HARMONYOS SANS FONTS, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT.
-
-5.NO LIABILITY
-
-IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY DIRECT OR INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE OF OR INABILITY TO USE HARMONYOS SANS FONTS, WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHER LEGAL THEORY, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-
-YOU EXPRESSLY ASSUME ALL LIABILITIES AND RISKS FOR USE OF HARMONYOS SANS FONTS. SHOULD THE HARMONYOS SANS FONTS PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
-</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div></details><ul><li><a href="https://docs.microsoft.com/zh-cn/typography/font-list/segoe-ui-emoji" target="_blank" rel="noopener noreferrer">Segoe UI Emoji<span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a> © 2018 Microsoft Corporation. All Rights Reserved.</li></ul><!--]--></div><footer class="page-meta"><div class="meta-item edit-link"><a class="nav-link external meta-item-label" href="https://github.com/NakanoMikuOrg/arch-guide/edit/main/docs/postscript/copyright.md" rel="noopener noreferrer" target="_blank" aria-label="📝 编辑本文"><!--[--><!--]--> 📝 编辑本文 <span><svg class="icon outbound" xmlns="http://www.w3.org/2000/svg" ariahidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><div class="meta-item last-updated"><span class="meta-item-label">📑 最后更新: </span><span class="meta-item-info">2021/6/19 上午3:57:21</span></div><div class="meta-item contributors"><span class="meta-item-label">🎨 参与贡献: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: wminid@yeah.net">icekylin</span><!----><!--]--><!--]--></span></div></footer><nav class="page-nav"><p class="inner"><span class="prev"> ← <a href="/postscript/contribute.html" class="nav-link" aria-label="贡献指南"><!--[--><!--]--> 贡献指南 <!--[--><!--]--></a></span><span class="next"><a href="/postscript/about.html" class="nav-link" aria-label="附录"><!--[--><!--]--> 附录 <!--[--><!--]--></a> → </span></p></nav><!--[--><!--]--></main></div><!----><!--]--></div>
-    <script src="/assets/js/runtime~app.770a0a6a.js" defer></script><script src="/assets/js/440.3a817dfc.js" defer></script><script src="/assets/js/app.e0ef27ec.js" defer></script>
+    <div id="app"><div class="Layout" data-v-c1e4d64d><!--[--><!--]--><!--[--><span tabindex="-1" data-v-0cc16f50></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-0cc16f50>Skip to content</a><!--]--><!----><header class="VPNav" data-v-c1e4d64d data-v-2cdbcd11><div class="VPNavBar" data-v-2cdbcd11 data-v-dc6ce67c><div class="wrapper" data-v-dc6ce67c><div class="container" data-v-dc6ce67c><div class="title" data-v-dc6ce67c><div class="VPNavBarTitle" data-v-dc6ce67c data-v-225be768><a class="title" href="/" data-v-225be768><!--[--><!--]--><!--[--><img class="VPImage logo" src="/images/logo.svg" alt data-v-c148f7ba><!--]--><!----><!--[--><!--]--></a></div></div><div class="content" data-v-dc6ce67c><div class="content-body" data-v-dc6ce67c><!--[--><!--]--><div class="VPNavBarSearch search" data-v-dc6ce67c><!--[--><!----><div id="docsearch"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><span class="vp-icon DocSearch-Search-Icon"></span><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"><kbd class="DocSearch-Button-Key"></kbd><kbd class="DocSearch-Button-Key">K</kbd></span></button></div><!--]--></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-dc6ce67c data-v-231145b0><span id="main-nav-aria-label" class="visually-hidden" data-v-231145b0> Main Navigation </span><!--[--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-231145b0 data-v-57c643ee><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-57c643ee><span class="text" data-v-57c643ee><!----><span data-v-57c643ee>🧭 指南</span><span class="vpi-chevron-down text-icon" data-v-57c643ee></span></span></button><div class="menu" data-v-57c643ee><div class="VPMenu" data-v-57c643ee data-v-056707df><div class="items" data-v-056707df><!--[--><!--[--><div class="VPMenuLink" data-v-056707df data-v-c9429104><a class="VPLink link" href="/guide/" data-v-c9429104><!--[--><span data-v-c9429104>🎐 千里之行</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-056707df data-v-c9429104><a class="VPLink link" href="/guide/prepare/head-on-blow.html" data-v-c9429104><!--[--><span data-v-c9429104>ℹ️ 尝试之前</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuGroup" data-v-056707df data-v-a3183301><p class="title" data-v-a3183301>🌱 新手上路</p><!--[--><!--[--><div class="VPMenuLink" data-v-a3183301 data-v-c9429104><a class="VPLink link" href="/guide/rookie/pre-install.html" data-v-c9429104><!--[--><span data-v-c9429104>💾 基础安装</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-a3183301 data-v-c9429104><a class="VPLink link" href="/guide/rookie/desktop-env-and-app.html" data-v-c9429104><!--[--><span data-v-c9429104>🔩 进阶安装</span><!--]--></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuGroup" data-v-056707df data-v-a3183301><p class="title" data-v-a3183301>🛠️ 进阶话题</p><!--[--><!--[--><div class="VPMenuLink" data-v-a3183301 data-v-c9429104><a class="VPLink link" href="/guide/advanced/optional-cfg-1.html" data-v-c9429104><!--[--><span data-v-c9429104>⚙️ 可选配置</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-a3183301 data-v-c9429104><a class="VPLink link" href="/guide/advanced/beauty-1.html" data-v-c9429104><!--[--><span data-v-c9429104>🌸 系统美化</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-a3183301 data-v-c9429104><a class="VPLink link" href="/guide/advanced/system-ctl.html" data-v-c9429104><!--[--><span data-v-c9429104>🧰 系统管理</span><!--]--></a></div><!--]--><!--]--></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-231145b0 data-v-57c643ee><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-57c643ee><span class="text" data-v-57c643ee><!----><span data-v-57c643ee>📦 应用参考</span><span class="vpi-chevron-down text-icon" data-v-57c643ee></span></span></button><div class="menu" data-v-57c643ee><div class="VPMenu" data-v-57c643ee data-v-056707df><div class="items" data-v-056707df><!--[--><!--[--><div class="VPMenuGroup" data-v-056707df data-v-a3183301><p class="title" data-v-a3183301>💽 常用软件</p><!--[--><!--[--><div class="VPMenuLink" data-v-a3183301 data-v-c9429104><a class="VPLink link" href="/app/common/daily.html" data-v-c9429104><!--[--><span data-v-c9429104>📐 日常办公</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-a3183301 data-v-c9429104><a class="VPLink link" href="/app/common/media.html" data-v-c9429104><!--[--><span data-v-c9429104>🎯 其它内容</span><!--]--></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuGroup" data-v-056707df data-v-a3183301><p class="title" data-v-a3183301>🔬 专有领域</p><!--[--><!--[--><div class="VPMenuLink" data-v-a3183301 data-v-c9429104><a class="VPLink link" href="/app/exclusive/video.html" data-v-c9429104><!--[--><span data-v-c9429104>🎹 媒体创作</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-a3183301 data-v-c9429104><a class="VPLink link" href="/app/exclusive/code.html" data-v-c9429104><!--[--><span data-v-c9429104>🖥️ 信息技术</span><!--]--></a></div><!--]--><!--]--></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup active" data-v-231145b0 data-v-57c643ee><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-57c643ee><span class="text" data-v-57c643ee><!----><span data-v-57c643ee>🍰 写在后面</span><span class="vpi-chevron-down text-icon" data-v-57c643ee></span></span></button><div class="menu" data-v-57c643ee><div class="VPMenu" data-v-57c643ee data-v-056707df><div class="items" data-v-056707df><!--[--><!--[--><div class="VPMenuLink" data-v-056707df data-v-c9429104><a class="VPLink link" href="/postscript/contributor-covenant.html" data-v-c9429104><!--[--><span data-v-c9429104>贡献者公约</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-056707df data-v-c9429104><a class="VPLink link" href="/postscript/contribute.html" data-v-c9429104><!--[--><span data-v-c9429104>贡献指南</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-056707df data-v-c9429104><a class="VPLink link active" href="/postscript/copyright.html" data-v-c9429104><!--[--><span data-v-c9429104>版权说明</span><!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-056707df data-v-c9429104><a class="VPLink link" href="/postscript/about.html" data-v-c9429104><!--[--><span data-v-c9429104>附录</span><!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-dc6ce67c data-v-e92b9e04><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-e92b9e04 data-v-34693888 data-v-0b62a063><span class="check" data-v-0b62a063><span class="icon" data-v-0b62a063><!--[--><span class="vpi-sun sun" data-v-34693888></span><span class="vpi-moon moon" data-v-34693888></span><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-dc6ce67c data-v-41ee4c41 data-v-41bcd564><!--[--><a class="VPSocialLink no-icon" href="https://github.com/nakanomikuorg/arch-guide" aria-label="github" target="_blank" rel="noopener" data-v-41bcd564 data-v-cbc3b1ba><span class="vpi-social-github"></span></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-dc6ce67c data-v-2d2f2709 data-v-57c643ee><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-57c643ee><span class="vpi-more-horizontal icon" data-v-57c643ee></span></button><div class="menu" data-v-57c643ee><div class="VPMenu" data-v-57c643ee data-v-056707df><!----><!--[--><!--[--><!----><div class="group" data-v-2d2f2709><div class="item appearance" data-v-2d2f2709><p class="label" data-v-2d2f2709>Appearance</p><div class="appearance-action" data-v-2d2f2709><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title aria-checked="false" data-v-2d2f2709 data-v-34693888 data-v-0b62a063><span class="check" data-v-0b62a063><span class="icon" data-v-0b62a063><!--[--><span class="vpi-sun sun" data-v-34693888></span><span class="vpi-moon moon" data-v-34693888></span><!--]--></span></span></button></div></div></div><div class="group" data-v-2d2f2709><div class="item social-links" data-v-2d2f2709><div class="VPSocialLinks social-links-list" data-v-2d2f2709 data-v-41bcd564><!--[--><a class="VPSocialLink no-icon" href="https://github.com/nakanomikuorg/arch-guide" aria-label="github" target="_blank" rel="noopener" data-v-41bcd564 data-v-cbc3b1ba><span class="vpi-social-github"></span></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-dc6ce67c data-v-eb38cc91><span class="container" data-v-eb38cc91><span class="top" data-v-eb38cc91></span><span class="middle" data-v-eb38cc91></span><span class="bottom" data-v-eb38cc91></span></span></button></div></div></div></div><div class="divider" data-v-dc6ce67c><div class="divider-line" data-v-dc6ce67c></div></div></div><!----></header><div class="VPLocalNav empty fixed" data-v-c1e4d64d data-v-936e5443><div class="container" data-v-936e5443><!----><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-936e5443 data-v-f90f884a><button data-v-f90f884a>Return to top</button><!----></div></div></div><!----><div class="VPContent" id="VPContent" data-v-c1e4d64d data-v-ac58df2e><div class="VPDoc has-aside" data-v-ac58df2e data-v-dea4388b><!--[--><!--]--><div class="container" data-v-dea4388b><div class="aside" data-v-dea4388b><div class="aside-curtain" data-v-dea4388b></div><div class="aside-container" data-v-dea4388b><div class="aside-content" data-v-dea4388b><div class="VPDocAside" data-v-dea4388b data-v-315ec99f><!--[--><!--]--><!--[--><!--]--><nav aria-labelledby="doc-outline-aria-label" class="VPDocAsideOutline" data-v-315ec99f data-v-d6272279><div class="content" data-v-d6272279><div class="outline-marker" data-v-d6272279></div><div aria-level="2" class="outline-title" id="doc-outline-aria-label" role="heading" data-v-d6272279>On this page</div><ul class="VPDocOutlineItem root" data-v-d6272279 data-v-9dd33c28><!--[--><!--]--></ul></div></nav><!--[--><!--]--><div class="spacer" data-v-315ec99f></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-dea4388b><div class="content-container" data-v-dea4388b><!--[--><!--]--><main class="main" data-v-dea4388b><div style="position:relative;" class="vp-doc _postscript_copyright" data-v-dea4388b><div><h1 id="版权说明" tabindex="-1">版权说明 <a class="header-anchor" href="#版权说明" aria-label="Permalink to &quot;版权说明&quot;">​</a></h1><blockquote><h3 id="🌸-待到山花烂漫时-她在丛中笑" tabindex="-1">🌸 待到山花烂漫时，她在丛中笑 <a class="header-anchor" href="#🌸-待到山花烂漫时-她在丛中笑" aria-label="Permalink to &quot;🌸 待到山花烂漫时，她在丛中笑&quot;">​</a></h3><p>本小节记录指南涉及的一些版权信息</p></blockquote><h2 id="原作信息" tabindex="-1">原作信息 <a class="header-anchor" href="#原作信息" aria-label="Permalink to &quot;原作信息&quot;">​</a></h2><p>本指南派生自 <a href="https://github.com/ArchLinuxStudio/ArchLinuxTutorial" target="_blank" rel="noreferrer">Arch Linux 安装使用教程</a>。</p><h3 id="原作贡献者" tabindex="-1">原作贡献者 <a class="header-anchor" href="#原作贡献者" aria-label="Permalink to &quot;原作贡献者&quot;">​</a></h3><ul><li><a href="https://github.com/wallena3" target="_blank" rel="noreferrer">Kagarino Kirie</a></li><li><a href="https://github.com/hibobmaster" target="_blank" rel="noreferrer">hibobmaster</a></li><li><a href="https://github.com/Chumo2791" target="_blank" rel="noreferrer">Chumo2791</a></li><li><a href="https://github.com/JimMoen" target="_blank" rel="noreferrer">JimMoen</a></li><li><a href="https://github.com/livrth" target="_blank" rel="noreferrer">livrth</a></li><li><a href="https://github.com/ConanEdogawa1" target="_blank" rel="noreferrer">ConanEdogawa1</a></li></ul><h3 id="原作许可证" tabindex="-1">原作许可证 <a class="header-anchor" href="#原作许可证" aria-label="Permalink to &quot;原作许可证&quot;">​</a></h3><p>原作采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noreferrer">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可。</p><h3 id="特别声明" tabindex="-1">特别声明 <a class="header-anchor" href="#特别声明" aria-label="Permalink to &quot;特别声明&quot;">​</a></h3><p>本作品所有观点仅代表本项目贡献者观点，<strong>许可人不为本指南的观点、示例或任何行为背书</strong>。</p><h2 id="本作信息" tabindex="-1">本作信息 <a class="header-anchor" href="#本作信息" aria-label="Permalink to &quot;本作信息&quot;">​</a></h2><p>网站源代码采用 MIT 许可证；未经特殊说明，本作品采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="noreferrer">知识共享署名-相同方式共享 4.0 国际许可协议</a> 进行许可。</p><details class="details custom-block"><summary>LICENCE</summary><div class="language-LICENCE vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">LICENCE</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>Attribution-ShareAlike 4.0 International</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>=======================================================================</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Creative Commons Corporation (&quot;Creative Commons&quot;) is not a law firm and</span></span>
+<span class="line"><span>does not provide legal services or legal advice. Distribution of</span></span>
+<span class="line"><span>Creative Commons public licenses does not create a lawyer-client or</span></span>
+<span class="line"><span>other relationship. Creative Commons makes its licenses and related</span></span>
+<span class="line"><span>information available on an &quot;as-is&quot; basis. Creative Commons gives no</span></span>
+<span class="line"><span>warranties regarding its licenses, any material licensed under their</span></span>
+<span class="line"><span>terms and conditions, or any related information. Creative Commons</span></span>
+<span class="line"><span>disclaims all liability for damages resulting from their use to the</span></span>
+<span class="line"><span>fullest extent possible.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Using Creative Commons Public Licenses</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Creative Commons public licenses provide a standard set of terms and</span></span>
+<span class="line"><span>conditions that creators and other rights holders may use to share</span></span>
+<span class="line"><span>original works of authorship and other material subject to copyright</span></span>
+<span class="line"><span>and certain other rights specified in the public license below. The</span></span>
+<span class="line"><span>following considerations are for informational purposes only, are not</span></span>
+<span class="line"><span>exhaustive, and do not form part of our licenses.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>     Considerations for licensors: Our public licenses are</span></span>
+<span class="line"><span>     intended for use by those authorized to give the public</span></span>
+<span class="line"><span>     permission to use material in ways otherwise restricted by</span></span>
+<span class="line"><span>     copyright and certain other rights. Our licenses are</span></span>
+<span class="line"><span>     irrevocable. Licensors should read and understand the terms</span></span>
+<span class="line"><span>     and conditions of the license they choose before applying it.</span></span>
+<span class="line"><span>     Licensors should also secure all rights necessary before</span></span>
+<span class="line"><span>     applying our licenses so that the public can reuse the</span></span>
+<span class="line"><span>     material as expected. Licensors should clearly mark any</span></span>
+<span class="line"><span>     material not subject to the license. This includes other CC-</span></span>
+<span class="line"><span>     licensed material, or material used under an exception or</span></span>
+<span class="line"><span>     limitation to copyright. More considerations for licensors:</span></span>
+<span class="line"><span>	wiki.creativecommons.org/Considerations_for_licensors</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>     Considerations for the public: By using one of our public</span></span>
+<span class="line"><span>     licenses, a licensor grants the public permission to use the</span></span>
+<span class="line"><span>     licensed material under specified terms and conditions. If</span></span>
+<span class="line"><span>     the licensor&#39;s permission is not necessary for any reason--for</span></span>
+<span class="line"><span>     example, because of any applicable exception or limitation to</span></span>
+<span class="line"><span>     copyright--then that use is not regulated by the license. Our</span></span>
+<span class="line"><span>     licenses grant only permissions under copyright and certain</span></span>
+<span class="line"><span>     other rights that a licensor has authority to grant. Use of</span></span>
+<span class="line"><span>     the licensed material may still be restricted for other</span></span>
+<span class="line"><span>     reasons, including because others have copyright or other</span></span>
+<span class="line"><span>     rights in the material. A licensor may make special requests,</span></span>
+<span class="line"><span>     such as asking that all changes be marked or described.</span></span>
+<span class="line"><span>     Although not required by our licenses, you are encouraged to</span></span>
+<span class="line"><span>     respect those requests where reasonable. More_considerations</span></span>
+<span class="line"><span>     for the public:</span></span>
+<span class="line"><span>	wiki.creativecommons.org/Considerations_for_licensees</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>=======================================================================</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Creative Commons Attribution-ShareAlike 4.0 International Public</span></span>
+<span class="line"><span>License</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>By exercising the Licensed Rights (defined below), You accept and agree</span></span>
+<span class="line"><span>to be bound by the terms and conditions of this Creative Commons</span></span>
+<span class="line"><span>Attribution-ShareAlike 4.0 International Public License (&quot;Public</span></span>
+<span class="line"><span>License&quot;). To the extent this Public License may be interpreted as a</span></span>
+<span class="line"><span>contract, You are granted the Licensed Rights in consideration of Your</span></span>
+<span class="line"><span>acceptance of these terms and conditions, and the Licensor grants You</span></span>
+<span class="line"><span>such rights in consideration of benefits the Licensor receives from</span></span>
+<span class="line"><span>making the Licensed Material available under these terms and</span></span>
+<span class="line"><span>conditions.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Section 1 -- Definitions.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  a. Adapted Material means material subject to Copyright and Similar</span></span>
+<span class="line"><span>     Rights that is derived from or based upon the Licensed Material</span></span>
+<span class="line"><span>     and in which the Licensed Material is translated, altered,</span></span>
+<span class="line"><span>     arranged, transformed, or otherwise modified in a manner requiring</span></span>
+<span class="line"><span>     permission under the Copyright and Similar Rights held by the</span></span>
+<span class="line"><span>     Licensor. For purposes of this Public License, where the Licensed</span></span>
+<span class="line"><span>     Material is a musical work, performance, or sound recording,</span></span>
+<span class="line"><span>     Adapted Material is always produced where the Licensed Material is</span></span>
+<span class="line"><span>     synched in timed relation with a moving image.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  b. Adapter&#39;s License means the license You apply to Your Copyright</span></span>
+<span class="line"><span>     and Similar Rights in Your contributions to Adapted Material in</span></span>
+<span class="line"><span>     accordance with the terms and conditions of this Public License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  c. BY-SA Compatible License means a license listed at</span></span>
+<span class="line"><span>     creativecommons.org/compatiblelicenses, approved by Creative</span></span>
+<span class="line"><span>     Commons as essentially the equivalent of this Public License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  d. Copyright and Similar Rights means copyright and/or similar rights</span></span>
+<span class="line"><span>     closely related to copyright including, without limitation,</span></span>
+<span class="line"><span>     performance, broadcast, sound recording, and Sui Generis Database</span></span>
+<span class="line"><span>     Rights, without regard to how the rights are labeled or</span></span>
+<span class="line"><span>     categorized. For purposes of this Public License, the rights</span></span>
+<span class="line"><span>     specified in Section 2(b)(1)-(2) are not Copyright and Similar</span></span>
+<span class="line"><span>     Rights.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  e. Effective Technological Measures means those measures that, in the</span></span>
+<span class="line"><span>     absence of proper authority, may not be circumvented under laws</span></span>
+<span class="line"><span>     fulfilling obligations under Article 11 of the WIPO Copyright</span></span>
+<span class="line"><span>     Treaty adopted on December 20, 1996, and/or similar international</span></span>
+<span class="line"><span>     agreements.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  f. Exceptions and Limitations means fair use, fair dealing, and/or</span></span>
+<span class="line"><span>     any other exception or limitation to Copyright and Similar Rights</span></span>
+<span class="line"><span>     that applies to Your use of the Licensed Material.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  g. License Elements means the license attributes listed in the name</span></span>
+<span class="line"><span>     of a Creative Commons Public License. The License Elements of this</span></span>
+<span class="line"><span>     Public License are Attribution and ShareAlike.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  h. Licensed Material means the artistic or literary work, database,</span></span>
+<span class="line"><span>     or other material to which the Licensor applied this Public</span></span>
+<span class="line"><span>     License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  i. Licensed Rights means the rights granted to You subject to the</span></span>
+<span class="line"><span>     terms and conditions of this Public License, which are limited to</span></span>
+<span class="line"><span>     all Copyright and Similar Rights that apply to Your use of the</span></span>
+<span class="line"><span>     Licensed Material and that the Licensor has authority to license.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  j. Licensor means the individual(s) or entity(ies) granting rights</span></span>
+<span class="line"><span>     under this Public License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  k. Share means to provide material to the public by any means or</span></span>
+<span class="line"><span>     process that requires permission under the Licensed Rights, such</span></span>
+<span class="line"><span>     as reproduction, public display, public performance, distribution,</span></span>
+<span class="line"><span>     dissemination, communication, or importation, and to make material</span></span>
+<span class="line"><span>     available to the public including in ways that members of the</span></span>
+<span class="line"><span>     public may access the material from a place and at a time</span></span>
+<span class="line"><span>     individually chosen by them.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  l. Sui Generis Database Rights means rights other than copyright</span></span>
+<span class="line"><span>     resulting from Directive 96/9/EC of the European Parliament and of</span></span>
+<span class="line"><span>     the Council of 11 March 1996 on the legal protection of databases,</span></span>
+<span class="line"><span>     as amended and/or succeeded, as well as other essentially</span></span>
+<span class="line"><span>     equivalent rights anywhere in the world.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  m. You means the individual or entity exercising the Licensed Rights</span></span>
+<span class="line"><span>     under this Public License. Your has a corresponding meaning.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Section 2 -- Scope.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  a. License grant.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       1. Subject to the terms and conditions of this Public License,</span></span>
+<span class="line"><span>          the Licensor hereby grants You a worldwide, royalty-free,</span></span>
+<span class="line"><span>          non-sublicensable, non-exclusive, irrevocable license to</span></span>
+<span class="line"><span>          exercise the Licensed Rights in the Licensed Material to:</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            a. reproduce and Share the Licensed Material, in whole or</span></span>
+<span class="line"><span>               in part; and</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            b. produce, reproduce, and Share Adapted Material.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       2. Exceptions and Limitations. For the avoidance of doubt, where</span></span>
+<span class="line"><span>          Exceptions and Limitations apply to Your use, this Public</span></span>
+<span class="line"><span>          License does not apply, and You do not need to comply with</span></span>
+<span class="line"><span>          its terms and conditions.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       3. Term. The term of this Public License is specified in Section</span></span>
+<span class="line"><span>          6(a).</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       4. Media and formats; technical modifications allowed. The</span></span>
+<span class="line"><span>          Licensor authorizes You to exercise the Licensed Rights in</span></span>
+<span class="line"><span>          all media and formats whether now known or hereafter created,</span></span>
+<span class="line"><span>          and to make technical modifications necessary to do so. The</span></span>
+<span class="line"><span>          Licensor waives and/or agrees not to assert any right or</span></span>
+<span class="line"><span>          authority to forbid You from making technical modifications</span></span>
+<span class="line"><span>          necessary to exercise the Licensed Rights, including</span></span>
+<span class="line"><span>          technical modifications necessary to circumvent Effective</span></span>
+<span class="line"><span>          Technological Measures. For purposes of this Public License,</span></span>
+<span class="line"><span>          simply making modifications authorized by this Section 2(a)</span></span>
+<span class="line"><span>          (4) never produces Adapted Material.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       5. Downstream recipients.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            a. Offer from the Licensor -- Licensed Material. Every</span></span>
+<span class="line"><span>               recipient of the Licensed Material automatically</span></span>
+<span class="line"><span>               receives an offer from the Licensor to exercise the</span></span>
+<span class="line"><span>               Licensed Rights under the terms and conditions of this</span></span>
+<span class="line"><span>               Public License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            b. Additional offer from the Licensor -- Adapted Material.</span></span>
+<span class="line"><span>               Every recipient of Adapted Material from You</span></span>
+<span class="line"><span>               automatically receives an offer from the Licensor to</span></span>
+<span class="line"><span>               exercise the Licensed Rights in the Adapted Material</span></span>
+<span class="line"><span>               under the conditions of the Adapter&#39;s License You apply.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            c. No downstream restrictions. You may not offer or impose</span></span>
+<span class="line"><span>               any additional or different terms or conditions on, or</span></span>
+<span class="line"><span>               apply any Effective Technological Measures to, the</span></span>
+<span class="line"><span>               Licensed Material if doing so restricts exercise of the</span></span>
+<span class="line"><span>               Licensed Rights by any recipient of the Licensed</span></span>
+<span class="line"><span>               Material.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       6. No endorsement. Nothing in this Public License constitutes or</span></span>
+<span class="line"><span>          may be construed as permission to assert or imply that You</span></span>
+<span class="line"><span>          are, or that Your use of the Licensed Material is, connected</span></span>
+<span class="line"><span>          with, or sponsored, endorsed, or granted official status by,</span></span>
+<span class="line"><span>          the Licensor or others designated to receive attribution as</span></span>
+<span class="line"><span>          provided in Section 3(a)(1)(A)(i).</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  b. Other rights.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       1. Moral rights, such as the right of integrity, are not</span></span>
+<span class="line"><span>          licensed under this Public License, nor are publicity,</span></span>
+<span class="line"><span>          privacy, and/or other similar personality rights; however, to</span></span>
+<span class="line"><span>          the extent possible, the Licensor waives and/or agrees not to</span></span>
+<span class="line"><span>          assert any such rights held by the Licensor to the limited</span></span>
+<span class="line"><span>          extent necessary to allow You to exercise the Licensed</span></span>
+<span class="line"><span>          Rights, but not otherwise.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       2. Patent and trademark rights are not licensed under this</span></span>
+<span class="line"><span>          Public License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       3. To the extent possible, the Licensor waives any right to</span></span>
+<span class="line"><span>          collect royalties from You for the exercise of the Licensed</span></span>
+<span class="line"><span>          Rights, whether directly or through a collecting society</span></span>
+<span class="line"><span>          under any voluntary or waivable statutory or compulsory</span></span>
+<span class="line"><span>          licensing scheme. In all other cases the Licensor expressly</span></span>
+<span class="line"><span>          reserves any right to collect such royalties.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Section 3 -- License Conditions.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Your exercise of the Licensed Rights is expressly made subject to the</span></span>
+<span class="line"><span>following conditions.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  a. Attribution.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       1. If You Share the Licensed Material (including in modified</span></span>
+<span class="line"><span>          form), You must:</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            a. retain the following if it is supplied by the Licensor</span></span>
+<span class="line"><span>               with the Licensed Material:</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>                 i. identification of the creator(s) of the Licensed</span></span>
+<span class="line"><span>                    Material and any others designated to receive</span></span>
+<span class="line"><span>                    attribution, in any reasonable manner requested by</span></span>
+<span class="line"><span>                    the Licensor (including by pseudonym if</span></span>
+<span class="line"><span>                    designated);</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>                ii. a copyright notice;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>               iii. a notice that refers to this Public License;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>                iv. a notice that refers to the disclaimer of</span></span>
+<span class="line"><span>                    warranties;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>                 v. a URI or hyperlink to the Licensed Material to the</span></span>
+<span class="line"><span>                    extent reasonably practicable;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            b. indicate if You modified the Licensed Material and</span></span>
+<span class="line"><span>               retain an indication of any previous modifications; and</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>            c. indicate the Licensed Material is licensed under this</span></span>
+<span class="line"><span>               Public License, and include the text of, or the URI or</span></span>
+<span class="line"><span>               hyperlink to, this Public License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       2. You may satisfy the conditions in Section 3(a)(1) in any</span></span>
+<span class="line"><span>          reasonable manner based on the medium, means, and context in</span></span>
+<span class="line"><span>          which You Share the Licensed Material. For example, it may be</span></span>
+<span class="line"><span>          reasonable to satisfy the conditions by providing a URI or</span></span>
+<span class="line"><span>          hyperlink to a resource that includes the required</span></span>
+<span class="line"><span>          information.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       3. If requested by the Licensor, You must remove any of the</span></span>
+<span class="line"><span>          information required by Section 3(a)(1)(A) to the extent</span></span>
+<span class="line"><span>          reasonably practicable.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  b. ShareAlike.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>     In addition to the conditions in Section 3(a), if You Share</span></span>
+<span class="line"><span>     Adapted Material You produce, the following conditions also apply.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       1. The Adapter&#39;s License You apply must be a Creative Commons</span></span>
+<span class="line"><span>          license with the same License Elements, this version or</span></span>
+<span class="line"><span>          later, or a BY-SA Compatible License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       2. You must include the text of, or the URI or hyperlink to, the</span></span>
+<span class="line"><span>          Adapter&#39;s License You apply. You may satisfy this condition</span></span>
+<span class="line"><span>          in any reasonable manner based on the medium, means, and</span></span>
+<span class="line"><span>          context in which You Share Adapted Material.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       3. You may not offer or impose any additional or different terms</span></span>
+<span class="line"><span>          or conditions on, or apply any Effective Technological</span></span>
+<span class="line"><span>          Measures to, Adapted Material that restrict exercise of the</span></span>
+<span class="line"><span>          rights granted under the Adapter&#39;s License You apply.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Section 4 -- Sui Generis Database Rights.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Where the Licensed Rights include Sui Generis Database Rights that</span></span>
+<span class="line"><span>apply to Your use of the Licensed Material:</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  a. for the avoidance of doubt, Section 2(a)(1) grants You the right</span></span>
+<span class="line"><span>     to extract, reuse, reproduce, and Share all or a substantial</span></span>
+<span class="line"><span>     portion of the contents of the database;</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  b. if You include all or a substantial portion of the database</span></span>
+<span class="line"><span>     contents in a database in which You have Sui Generis Database</span></span>
+<span class="line"><span>     Rights, then the database in which You have Sui Generis Database</span></span>
+<span class="line"><span>     Rights (but not its individual contents) is Adapted Material,</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>     including for purposes of Section 3(b); and</span></span>
+<span class="line"><span>  c. You must comply with the conditions in Section 3(a) if You Share</span></span>
+<span class="line"><span>     all or a substantial portion of the contents of the database.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>For the avoidance of doubt, this Section 4 supplements and does not</span></span>
+<span class="line"><span>replace Your obligations under this Public License where the Licensed</span></span>
+<span class="line"><span>Rights include other Copyright and Similar Rights.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Section 5 -- Disclaimer of Warranties and Limitation of Liability.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE</span></span>
+<span class="line"><span>     EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS</span></span>
+<span class="line"><span>     AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF</span></span>
+<span class="line"><span>     ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,</span></span>
+<span class="line"><span>     IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,</span></span>
+<span class="line"><span>     WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR</span></span>
+<span class="line"><span>     PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,</span></span>
+<span class="line"><span>     ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT</span></span>
+<span class="line"><span>     KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT</span></span>
+<span class="line"><span>     ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE</span></span>
+<span class="line"><span>     TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION,</span></span>
+<span class="line"><span>     NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,</span></span>
+<span class="line"><span>     INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,</span></span>
+<span class="line"><span>     COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR</span></span>
+<span class="line"><span>     USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN</span></span>
+<span class="line"><span>     ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR</span></span>
+<span class="line"><span>     DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR</span></span>
+<span class="line"><span>     IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  c. The disclaimer of warranties and limitation of liability provided</span></span>
+<span class="line"><span>     above shall be interpreted in a manner that, to the extent</span></span>
+<span class="line"><span>     possible, most closely approximates an absolute disclaimer and</span></span>
+<span class="line"><span>     waiver of all liability.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Section 6 -- Term and Termination.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  a. This Public License applies for the term of the Copyright and</span></span>
+<span class="line"><span>     Similar Rights licensed here. However, if You fail to comply with</span></span>
+<span class="line"><span>     this Public License, then Your rights under this Public License</span></span>
+<span class="line"><span>     terminate automatically.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  b. Where Your right to use the Licensed Material has terminated under</span></span>
+<span class="line"><span>     Section 6(a), it reinstates:</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       1. automatically as of the date the violation is cured, provided</span></span>
+<span class="line"><span>          it is cured within 30 days of Your discovery of the</span></span>
+<span class="line"><span>          violation; or</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>       2. upon express reinstatement by the Licensor.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>     For the avoidance of doubt, this Section 6(b) does not affect any</span></span>
+<span class="line"><span>     right the Licensor may have to seek remedies for Your violations</span></span>
+<span class="line"><span>     of this Public License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  c. For the avoidance of doubt, the Licensor may also offer the</span></span>
+<span class="line"><span>     Licensed Material under separate terms or conditions or stop</span></span>
+<span class="line"><span>     distributing the Licensed Material at any time; however, doing so</span></span>
+<span class="line"><span>     will not terminate this Public License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  d. Sections 1, 5, 6, 7, and 8 survive termination of this Public</span></span>
+<span class="line"><span>     License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Section 7 -- Other Terms and Conditions.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  a. The Licensor shall not be bound by any additional or different</span></span>
+<span class="line"><span>     terms or conditions communicated by You unless expressly agreed.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  b. Any arrangements, understandings, or agreements regarding the</span></span>
+<span class="line"><span>     Licensed Material not stated herein are separate from and</span></span>
+<span class="line"><span>     independent of the terms and conditions of this Public License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Section 8 -- Interpretation.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  a. For the avoidance of doubt, this Public License does not, and</span></span>
+<span class="line"><span>     shall not be interpreted to, reduce, limit, restrict, or impose</span></span>
+<span class="line"><span>     conditions on any use of the Licensed Material that could lawfully</span></span>
+<span class="line"><span>     be made without permission under this Public License.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  b. To the extent possible, if any provision of this Public License is</span></span>
+<span class="line"><span>     deemed unenforceable, it shall be automatically reformed to the</span></span>
+<span class="line"><span>     minimum extent necessary to make it enforceable. If the provision</span></span>
+<span class="line"><span>     cannot be reformed, it shall be severed from this Public License</span></span>
+<span class="line"><span>     without affecting the enforceability of the remaining terms and</span></span>
+<span class="line"><span>     conditions.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  c. No term or condition of this Public License will be waived and no</span></span>
+<span class="line"><span>     failure to comply consented to unless expressly agreed to by the</span></span>
+<span class="line"><span>     Licensor.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>  d. Nothing in this Public License constitutes or may be interpreted</span></span>
+<span class="line"><span>     as a limitation upon, or waiver of, any privileges and immunities</span></span>
+<span class="line"><span>     that apply to the Licensor or You, including from the legal</span></span>
+<span class="line"><span>     processes of any jurisdiction or authority.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>=======================================================================</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Creative Commons is not a party to its public</span></span>
+<span class="line"><span>licenses. Notwithstanding, Creative Commons may elect to apply one of</span></span>
+<span class="line"><span>its public licenses to material it publishes and in those instances</span></span>
+<span class="line"><span>will be considered the “Licensor.” The text of the Creative Commons</span></span>
+<span class="line"><span>public licenses is dedicated to the public domain under the CC0 Public</span></span>
+<span class="line"><span>Domain Dedication. Except for the limited purpose of indicating that</span></span>
+<span class="line"><span>material is shared under a Creative Commons public license or as</span></span>
+<span class="line"><span>otherwise permitted by the Creative Commons policies published at</span></span>
+<span class="line"><span>creativecommons.org/policies, Creative Commons does not authorize the</span></span>
+<span class="line"><span>use of the trademark &quot;Creative Commons&quot; or any other trademark or logo</span></span>
+<span class="line"><span>of Creative Commons without its prior written consent including,</span></span>
+<span class="line"><span>without limitation, in connection with any unauthorized modifications</span></span>
+<span class="line"><span>to any of its public licenses or any other arrangements,</span></span>
+<span class="line"><span>understandings, or agreements concerning use of licensed material. For</span></span>
+<span class="line"><span>the avoidance of doubt, this paragraph does not form part of the</span></span>
+<span class="line"><span>public licenses.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Creative Commons may be contacted at creativecommons.org.</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br><span class="line-number">78</span><br><span class="line-number">79</span><br><span class="line-number">80</span><br><span class="line-number">81</span><br><span class="line-number">82</span><br><span class="line-number">83</span><br><span class="line-number">84</span><br><span class="line-number">85</span><br><span class="line-number">86</span><br><span class="line-number">87</span><br><span class="line-number">88</span><br><span class="line-number">89</span><br><span class="line-number">90</span><br><span class="line-number">91</span><br><span class="line-number">92</span><br><span class="line-number">93</span><br><span class="line-number">94</span><br><span class="line-number">95</span><br><span class="line-number">96</span><br><span class="line-number">97</span><br><span class="line-number">98</span><br><span class="line-number">99</span><br><span class="line-number">100</span><br><span class="line-number">101</span><br><span class="line-number">102</span><br><span class="line-number">103</span><br><span class="line-number">104</span><br><span class="line-number">105</span><br><span class="line-number">106</span><br><span class="line-number">107</span><br><span class="line-number">108</span><br><span class="line-number">109</span><br><span class="line-number">110</span><br><span class="line-number">111</span><br><span class="line-number">112</span><br><span class="line-number">113</span><br><span class="line-number">114</span><br><span class="line-number">115</span><br><span class="line-number">116</span><br><span class="line-number">117</span><br><span class="line-number">118</span><br><span class="line-number">119</span><br><span class="line-number">120</span><br><span class="line-number">121</span><br><span class="line-number">122</span><br><span class="line-number">123</span><br><span class="line-number">124</span><br><span class="line-number">125</span><br><span class="line-number">126</span><br><span class="line-number">127</span><br><span class="line-number">128</span><br><span class="line-number">129</span><br><span class="line-number">130</span><br><span class="line-number">131</span><br><span class="line-number">132</span><br><span class="line-number">133</span><br><span class="line-number">134</span><br><span class="line-number">135</span><br><span class="line-number">136</span><br><span class="line-number">137</span><br><span class="line-number">138</span><br><span class="line-number">139</span><br><span class="line-number">140</span><br><span class="line-number">141</span><br><span class="line-number">142</span><br><span class="line-number">143</span><br><span class="line-number">144</span><br><span class="line-number">145</span><br><span class="line-number">146</span><br><span class="line-number">147</span><br><span class="line-number">148</span><br><span class="line-number">149</span><br><span class="line-number">150</span><br><span class="line-number">151</span><br><span class="line-number">152</span><br><span class="line-number">153</span><br><span class="line-number">154</span><br><span class="line-number">155</span><br><span class="line-number">156</span><br><span class="line-number">157</span><br><span class="line-number">158</span><br><span class="line-number">159</span><br><span class="line-number">160</span><br><span class="line-number">161</span><br><span class="line-number">162</span><br><span class="line-number">163</span><br><span class="line-number">164</span><br><span class="line-number">165</span><br><span class="line-number">166</span><br><span class="line-number">167</span><br><span class="line-number">168</span><br><span class="line-number">169</span><br><span class="line-number">170</span><br><span class="line-number">171</span><br><span class="line-number">172</span><br><span class="line-number">173</span><br><span class="line-number">174</span><br><span class="line-number">175</span><br><span class="line-number">176</span><br><span class="line-number">177</span><br><span class="line-number">178</span><br><span class="line-number">179</span><br><span class="line-number">180</span><br><span class="line-number">181</span><br><span class="line-number">182</span><br><span class="line-number">183</span><br><span class="line-number">184</span><br><span class="line-number">185</span><br><span class="line-number">186</span><br><span class="line-number">187</span><br><span class="line-number">188</span><br><span class="line-number">189</span><br><span class="line-number">190</span><br><span class="line-number">191</span><br><span class="line-number">192</span><br><span class="line-number">193</span><br><span class="line-number">194</span><br><span class="line-number">195</span><br><span class="line-number">196</span><br><span class="line-number">197</span><br><span class="line-number">198</span><br><span class="line-number">199</span><br><span class="line-number">200</span><br><span class="line-number">201</span><br><span class="line-number">202</span><br><span class="line-number">203</span><br><span class="line-number">204</span><br><span class="line-number">205</span><br><span class="line-number">206</span><br><span class="line-number">207</span><br><span class="line-number">208</span><br><span class="line-number">209</span><br><span class="line-number">210</span><br><span class="line-number">211</span><br><span class="line-number">212</span><br><span class="line-number">213</span><br><span class="line-number">214</span><br><span class="line-number">215</span><br><span class="line-number">216</span><br><span class="line-number">217</span><br><span class="line-number">218</span><br><span class="line-number">219</span><br><span class="line-number">220</span><br><span class="line-number">221</span><br><span class="line-number">222</span><br><span class="line-number">223</span><br><span class="line-number">224</span><br><span class="line-number">225</span><br><span class="line-number">226</span><br><span class="line-number">227</span><br><span class="line-number">228</span><br><span class="line-number">229</span><br><span class="line-number">230</span><br><span class="line-number">231</span><br><span class="line-number">232</span><br><span class="line-number">233</span><br><span class="line-number">234</span><br><span class="line-number">235</span><br><span class="line-number">236</span><br><span class="line-number">237</span><br><span class="line-number">238</span><br><span class="line-number">239</span><br><span class="line-number">240</span><br><span class="line-number">241</span><br><span class="line-number">242</span><br><span class="line-number">243</span><br><span class="line-number">244</span><br><span class="line-number">245</span><br><span class="line-number">246</span><br><span class="line-number">247</span><br><span class="line-number">248</span><br><span class="line-number">249</span><br><span class="line-number">250</span><br><span class="line-number">251</span><br><span class="line-number">252</span><br><span class="line-number">253</span><br><span class="line-number">254</span><br><span class="line-number">255</span><br><span class="line-number">256</span><br><span class="line-number">257</span><br><span class="line-number">258</span><br><span class="line-number">259</span><br><span class="line-number">260</span><br><span class="line-number">261</span><br><span class="line-number">262</span><br><span class="line-number">263</span><br><span class="line-number">264</span><br><span class="line-number">265</span><br><span class="line-number">266</span><br><span class="line-number">267</span><br><span class="line-number">268</span><br><span class="line-number">269</span><br><span class="line-number">270</span><br><span class="line-number">271</span><br><span class="line-number">272</span><br><span class="line-number">273</span><br><span class="line-number">274</span><br><span class="line-number">275</span><br><span class="line-number">276</span><br><span class="line-number">277</span><br><span class="line-number">278</span><br><span class="line-number">279</span><br><span class="line-number">280</span><br><span class="line-number">281</span><br><span class="line-number">282</span><br><span class="line-number">283</span><br><span class="line-number">284</span><br><span class="line-number">285</span><br><span class="line-number">286</span><br><span class="line-number">287</span><br><span class="line-number">288</span><br><span class="line-number">289</span><br><span class="line-number">290</span><br><span class="line-number">291</span><br><span class="line-number">292</span><br><span class="line-number">293</span><br><span class="line-number">294</span><br><span class="line-number">295</span><br><span class="line-number">296</span><br><span class="line-number">297</span><br><span class="line-number">298</span><br><span class="line-number">299</span><br><span class="line-number">300</span><br><span class="line-number">301</span><br><span class="line-number">302</span><br><span class="line-number">303</span><br><span class="line-number">304</span><br><span class="line-number">305</span><br><span class="line-number">306</span><br><span class="line-number">307</span><br><span class="line-number">308</span><br><span class="line-number">309</span><br><span class="line-number">310</span><br><span class="line-number">311</span><br><span class="line-number">312</span><br><span class="line-number">313</span><br><span class="line-number">314</span><br><span class="line-number">315</span><br><span class="line-number">316</span><br><span class="line-number">317</span><br><span class="line-number">318</span><br><span class="line-number">319</span><br><span class="line-number">320</span><br><span class="line-number">321</span><br><span class="line-number">322</span><br><span class="line-number">323</span><br><span class="line-number">324</span><br><span class="line-number">325</span><br><span class="line-number">326</span><br><span class="line-number">327</span><br><span class="line-number">328</span><br><span class="line-number">329</span><br><span class="line-number">330</span><br><span class="line-number">331</span><br><span class="line-number">332</span><br><span class="line-number">333</span><br><span class="line-number">334</span><br><span class="line-number">335</span><br><span class="line-number">336</span><br><span class="line-number">337</span><br><span class="line-number">338</span><br><span class="line-number">339</span><br><span class="line-number">340</span><br><span class="line-number">341</span><br><span class="line-number">342</span><br><span class="line-number">343</span><br><span class="line-number">344</span><br><span class="line-number">345</span><br><span class="line-number">346</span><br><span class="line-number">347</span><br><span class="line-number">348</span><br><span class="line-number">349</span><br><span class="line-number">350</span><br><span class="line-number">351</span><br><span class="line-number">352</span><br><span class="line-number">353</span><br><span class="line-number">354</span><br><span class="line-number">355</span><br><span class="line-number">356</span><br><span class="line-number">357</span><br><span class="line-number">358</span><br><span class="line-number">359</span><br><span class="line-number">360</span><br><span class="line-number">361</span><br><span class="line-number">362</span><br><span class="line-number">363</span><br><span class="line-number">364</span><br><span class="line-number">365</span><br><span class="line-number">366</span><br><span class="line-number">367</span><br><span class="line-number">368</span><br><span class="line-number">369</span><br><span class="line-number">370</span><br><span class="line-number">371</span><br><span class="line-number">372</span><br><span class="line-number">373</span><br><span class="line-number">374</span><br><span class="line-number">375</span><br><span class="line-number">376</span><br><span class="line-number">377</span><br><span class="line-number">378</span><br><span class="line-number">379</span><br><span class="line-number">380</span><br><span class="line-number">381</span><br><span class="line-number">382</span><br><span class="line-number">383</span><br><span class="line-number">384</span><br><span class="line-number">385</span><br><span class="line-number">386</span><br><span class="line-number">387</span><br><span class="line-number">388</span><br><span class="line-number">389</span><br><span class="line-number">390</span><br><span class="line-number">391</span><br><span class="line-number">392</span><br><span class="line-number">393</span><br><span class="line-number">394</span><br><span class="line-number">395</span><br><span class="line-number">396</span><br><span class="line-number">397</span><br><span class="line-number">398</span><br><span class="line-number">399</span><br><span class="line-number">400</span><br><span class="line-number">401</span><br><span class="line-number">402</span><br><span class="line-number">403</span><br><span class="line-number">404</span><br><span class="line-number">405</span><br><span class="line-number">406</span><br><span class="line-number">407</span><br><span class="line-number">408</span><br><span class="line-number">409</span><br><span class="line-number">410</span><br><span class="line-number">411</span><br><span class="line-number">412</span><br><span class="line-number">413</span><br><span class="line-number">414</span><br><span class="line-number">415</span><br><span class="line-number">416</span><br><span class="line-number">417</span><br><span class="line-number">418</span><br><span class="line-number">419</span><br><span class="line-number">420</span><br><span class="line-number">421</span><br><span class="line-number">422</span><br><span class="line-number">423</span><br><span class="line-number">424</span><br><span class="line-number">425</span><br><span class="line-number">426</span><br><span class="line-number">427</span><br></div></div></details><h2 id="本作贡献者" tabindex="-1">本作贡献者 <a class="header-anchor" href="#本作贡献者" aria-label="Permalink to &quot;本作贡献者&quot;">​</a></h2><ul><li><a href="https://github.com/ice-kylin" target="_blank" rel="noreferrer">icekylin</a></li><li><a href="https://github.com/LagrangeOranges" target="_blank" rel="noreferrer">LinuXP</a></li><li><a href="https://github.com/Chumo2791" target="_blank" rel="noreferrer">Chumo2791</a></li></ul><h2 id="特殊说明" tabindex="-1">特殊说明 <a class="header-anchor" href="#特殊说明" aria-label="Permalink to &quot;特殊说明&quot;">​</a></h2><h3 id="字体" tabindex="-1">字体 <a class="header-anchor" href="#字体" aria-label="Permalink to &quot;字体&quot;">​</a></h3><ul><li><p><a href="https://developer.harmonyos.com/cn/docs/design/des-guides/font-0000001157868583" target="_blank" rel="noreferrer">HarmonyOS Sans Fonts</a></p><ul><li>© 2021 Huawei Device Co., Ltd.</li><li>HarmonyOS Sans Fonts Software is licensed under HarmonyOS Sans Fonts License Agreement.</li></ul></li></ul><details class="details custom-block"><summary>LICENCE</summary><div class="language-LICENCE vp-adaptive-theme line-numbers-mode"><button title="Copy Code" class="copy"></button><span class="lang">LICENCE</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>License Notice</span></span>
+<span class="line"><span>Copyright 2021 Huawei Device Co., Ltd.</span></span>
+<span class="line"><span>HarmonyOS Sans Fonts Software is licensed under HarmonyOS Sans Fonts License Agreement.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>--------------------------------------------------------------------------------</span></span>
+<span class="line"><span>HarmonyOS Sans Fonts License Agreement</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>THIS HARMONYOS SANS FONTS LICENSE AGREEMENT (&quot;AGREEMENT&quot;) IS A LEGAL AGREEMENT BETWEEN YOU (EITHER A SINGLE INDIVIDUAL, OR SINGLE LEGAL ENTITY) AND HUAWEI DEVICE CO., LTD.( &quot;LICENSOR&quot;)FOR THE USE OF THE HARMONYOS SANS FONTS ACCOMPANYING THIS AGREEMENT.BY DOWNLOADING,COPYING OR OTHERWISE USING HARMONYOS SANS FONTS YOU INDICATE THAT YOU AGREE TO BE BOUND BY ALL OF THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, YOU MAY NOT DOWNLOAD, COPY OR OTHERWISE USE THE HARMONYOS SANS FONTS, AND YOU SHALL PROMPTLY DESTROY AND DELETE ALL THE HARMONYOS SANS FONTS.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>1.Definition</span></span>
+<span class="line"><span>&quot;HarmonyOS Sans Fonts&quot; shall mean the collection of fonts software components provided by Licensor under this Agreement and clearly marked as &quot;HarmonyOS¬ Sans&quot;.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>&quot;YOU&quot; shall mean an individual or legal entity exercising permissions granted by this Agreement.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>2.GRANT OF LICENSE</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>Subject to the terms and conditions of this Agreement, Licensor hereby grant YOU a non-transferable, non-exclusive, royalty-free, revocable, worldwide copyright license to use,copy, merge, embed, bundle, redistribute and/or sell unmodified copies of HarmonyOS Sans Fonts with any software except for fonts software，subject to the  following conditions:</span></span>
+<span class="line"><span>1)YOU shall make a prominent notice in the software to state that HarmonyOS Sans Fonts are used.</span></span>
+<span class="line"><span>2)YOU may not make any modifications to HarmonyOS Sans Fonts or any of their individual components.</span></span>
+<span class="line"><span>3)Neither HarmonyOS Sans Fonts nor any of their individual components may be redistributed or sold in a stand-alone base. This limitation does not apply to any work created by using HarmonyOS Sans Fonts. You can freely distribute or sell your work, such as materials, logos, application software etc. created by using HarmonyOS Sans Fonts.</span></span>
+<span class="line"><span>4)YOU shall retain the copyright notice and this Agreement in any copies of HarmonyOS Sans Fonts.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>3.Termination</span></span>
+<span class="line"><span>This Agreement will be automatically terminated if YOU breach any of this Agreement.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>4.NO WARRANTY</span></span>
+<span class="line"><span>YOU AGREE THAT THE HARMONYOS SANS FONTS ARE PROVIDED BY LICENSOR ON AN &quot;AS IS&quot; BASIS. LICENSOR MAKES NO WARRANTY, EXPRESSED OR IMPLIED OR STATUTORY, WITH RESPECT TO ANY OF THE HARMONYOS SANS FONTS, INCLUDING WITHOUT LIMITATION, ANY IMPLIED WARRANTIES OF MERCHANTABILITY, SATISFACTORY QUALITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>5.NO LIABILITY</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>IN NO EVENT SHALL LICENSOR BE LIABLE FOR ANY DIRECT OR INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE OF OR INABILITY TO USE HARMONYOS SANS FONTS, WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHER LEGAL THEORY, EVEN IF LICENSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span></span>
+<span class="line"><span></span></span>
+<span class="line"><span>YOU EXPRESSLY ASSUME ALL LIABILITIES AND RISKS FOR USE OF HARMONYOS SANS FONTS. SHOULD THE HARMONYOS SANS FONTS PROVE DEFECTIVE, YOU ASSUME THE ENTIRE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.</span></span></code></pre><div class="line-numbers-wrapper" aria-hidden="true"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br></div></div></details><ul><li><a href="https://docs.microsoft.com/zh-cn/typography/font-list/segoe-ui-emoji" target="_blank" rel="noreferrer">Segoe UI Emoji</a> © 2018 Microsoft Corporation. All Rights Reserved.</li></ul></div></div></main><footer class="VPDocFooter" data-v-dea4388b data-v-02e84666><!--[--><!--]--><div class="edit-info" data-v-02e84666><div class="edit-link" data-v-02e84666><a class="VPLink link vp-external-link-icon no-icon edit-link-button" href="https://github.com/nakanomikuorg/arch-guide/edit/main/docs/postscript/copyright.md" target="_blank" rel="noreferrer" data-v-02e84666><!--[--><span class="vpi-square-pen edit-link-icon" data-v-02e84666></span> 在 GitHub 上编辑此页<!--]--></a></div><div class="last-updated" data-v-02e84666><p class="VPLastUpdated" data-v-02e84666 data-v-ba88a489>📑 最后更新: <time datetime="2023-02-23T16:50:45.000Z" data-v-ba88a489></time></p></div></div><!----></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><footer class="VPFooter" data-v-c1e4d64d data-v-a4e81964><div class="container" data-v-a4e81964><p class="message" data-v-a4e81964>Code licensed under MIT, documentation under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" class="grabient-text">CC BY-SA 4.0</a>.</p><p class="copyright" data-v-a4e81964>Made with ❤️️ love by <a href="https://github.com/nakanomikuorg/arch-guide/graphs/contributors" class="grabient-text">all contributors</a>.</p></div></footer><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"app_common_android.md\":\"rnHBwa12\",\"app_common_collaboration.md\":\"B5Y6NCQI\",\"app_common_communication.md\":\"_kYLkXpf\",\"app_common_daily.md\":\"CxN4cW5s\",\"app_common_media.md\":\"CGUdTt7t\",\"app_common_office.md\":\"CjHr3SW5\",\"app_common_play.md\":\"Bn4gbVY8\",\"app_common_remote.md\":\"Du-Wmkwo\",\"app_exclusive_audio.md\":\"Dcfhrdyh\",\"app_exclusive_code.md\":\"CQJTrX4N\",\"app_exclusive_image.md\":\"DCG87feb\",\"app_exclusive_media.md\":\"Dqw8dHfK\",\"app_exclusive_video.md\":\"CVEukfO8\",\"guide_advanced_beauty-1.md\":\"CdMtJuxt\",\"guide_advanced_beauty-2.md\":\"CuARJVOL\",\"guide_advanced_beauty-3.md\":\"vnuQpYz5\",\"guide_advanced_btrfs.md\":\"CXyBeNjq\",\"guide_advanced_debug.md\":\"CcrIQKvW\",\"guide_advanced_make-install-disk.md\":\"Djw8ONdH\",\"guide_advanced_optional-cfg-1.md\":\"B968dbta\",\"guide_advanced_optional-cfg-2.md\":\"BUfp-GM-\",\"guide_advanced_power-ctl.md\":\"D5sPL3wo\",\"guide_advanced_system-ctl.md\":\"cAIcjh-K\",\"guide_index.md\":\"DYsTm3ZK\",\"guide_prepare_head-on-blow.md\":\"BXMa2Gqd\",\"guide_prepare_understand.md\":\"C_JlKhEg\",\"guide_rookie_basic-install-detail.md\":\"BPIcz6y2\",\"guide_rookie_basic-install.md\":\"vH2UQL5n\",\"guide_rookie_desktop-env-and-app.md\":\"GCBlaP-O\",\"guide_rookie_graphic-driver.md\":\"MQo6yXHC\",\"guide_rookie_pre-install.md\":\"D1wGg1YG\",\"guide_rookie_pre-virt.md\":\"CNNSuLS8\",\"guide_rookie_transparent.md\":\"Da997mQP\",\"guide_security_apparmor.md\":\"B6ocjorU\",\"guide_security_encryption.md\":\"D4HW7AVX\",\"guide_security_secureboot.md\":\"5LOOD3ya\",\"guide_security_summary.md\":\"D0MwUSgq\",\"index.md\":\"DmJUxgaG\",\"postscript_about.md\":\"nM66WXUl\",\"postscript_contribute.md\":\"DtnVHFZE\",\"postscript_contributor-covenant.md\":\"Dhfk2T1I\",\"postscript_copyright.md\":\"C6ER7Ga7\",\"postscript_postscript.md\":\"BlZBk-Jt\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"zh-CN\",\"dir\":\"ltr\",\"title\":\"archlinux 简明指南\",\"description\":\"本指南包含 archlinux 安装、配置、维护等，帮助新手快速上手\",\"base\":\"/\",\"head\":[],\"router\":{\"prefetchLinks\":true},\"appearance\":true,\"themeConfig\":{\"algolia\":{\"apiKey\":\"a8013e96ce5afc3bdea9699964e600b6\",\"appId\":\"PATI20OZQ0\",\"indexName\":\"arch-icekylin\",\"translations\":{\"button\":{\"buttonAriaLabel\":\"搜索文档\",\"buttonText\":\"搜索文档\"},\"modal\":{\"errorScreen\":{\"helpText\":\"你可能需要检查你的网络连接\",\"titleText\":\"无法获取结果\"},\"footer\":{\"closeText\":\"关闭\",\"navigateText\":\"切换\",\"searchByText\":\"搜索提供者\",\"selectText\":\"选择\"},\"noResultsScreen\":{\"noResultsText\":\"无法找到相关结果\",\"reportMissingResultsLinkText\":\"点击反馈\",\"reportMissingResultsText\":\"你认为该查询应该有结果？\",\"suggestedQueryText\":\"你可以尝试查询\"},\"searchBox\":{\"cancelButtonAriaLabel\":\"取消\",\"cancelButtonText\":\"取消\",\"resetButtonAriaLabel\":\"清除查询条件\",\"resetButtonTitle\":\"清除查询条件\"},\"startScreen\":{\"favoriteSearchesTitle\":\"收藏\",\"noRecentSearchesText\":\"没有搜索历史\",\"recentSearchesTitle\":\"搜索历史\",\"removeFavoriteSearchButtonTitle\":\"从收藏中移除\",\"removeRecentSearchButtonTitle\":\"从搜索历史中移除\",\"saveRecentSearchButtonTitle\":\"保存至搜索历史\"}}}},\"editLink\":{\"pattern\":\"https://github.com/nakanomikuorg/arch-guide/edit/main/docs/:path\",\"text\":\"在 GitHub 上编辑此页\"},\"footer\":{\"message\":\"Code licensed under MIT, documentation under <a href=\\\"https://creativecommons.org/licenses/by-sa/4.0/deed.zh\\\" class=\\\"grabient-text\\\">CC BY-SA 4.0</a>.\",\"copyright\":\"Made with ❤️️ love by <a href=\\\"https://github.com/nakanomikuorg/arch-guide/graphs/contributors\\\" class=\\\"grabient-text\\\">all contributors</a>.\"},\"lastUpdatedText\":\"📑 最后更新\",\"logo\":\"/images/logo.svg\",\"nav\":[{\"text\":\"🧭 指南\",\"items\":[{\"text\":\"🎐 千里之行\",\"link\":\"/guide/\"},{\"text\":\"ℹ️ 尝试之前\",\"link\":\"/guide/prepare/head-on-blow\"},{\"text\":\"🌱 新手上路\",\"items\":[{\"text\":\"💾 基础安装\",\"link\":\"/guide/rookie/pre-install\"},{\"text\":\"🔩 进阶安装\",\"link\":\"/guide/rookie/desktop-env-and-app\"}]},{\"text\":\"🛠️ 进阶话题\",\"items\":[{\"text\":\"⚙️ 可选配置\",\"link\":\"/guide/advanced/optional-cfg-1\"},{\"text\":\"🌸 系统美化\",\"link\":\"/guide/advanced/beauty-1\"},{\"text\":\"🧰 系统管理\",\"link\":\"/guide/advanced/system-ctl\"}]}]},{\"text\":\"📦 应用参考\",\"items\":[{\"text\":\"💽 常用软件\",\"items\":[{\"text\":\"📐 日常办公\",\"link\":\"/app/common/daily\"},{\"text\":\"🎯 其它内容\",\"link\":\"/app/common/media\"}]},{\"text\":\"🔬 专有领域\",\"items\":[{\"text\":\"🎹 媒体创作\",\"link\":\"/app/exclusive/video\"},{\"text\":\"🖥️ 信息技术\",\"link\":\"/app/exclusive/code\"}]}]},{\"text\":\"🍰 写在后面\",\"items\":[{\"text\":\"贡献者公约\",\"link\":\"/postscript/contributor-covenant\"},{\"text\":\"贡献指南\",\"link\":\"/postscript/contribute\"},{\"text\":\"版权说明\",\"link\":\"/postscript/copyright\"},{\"text\":\"附录\",\"link\":\"/postscript/about\"}]}],\"sidebar\":{\"/guide/\":[{\"text\":\"🎐 千里之行\",\"link\":\"/guide/\"},{\"text\":\"ℹ️ 尝试之前\",\"items\":[{\"text\":\"archlinux 真的适合我吗？\",\"link\":\"/guide/prepare/head-on-blow\"},{\"text\":\"了解 archlinux\",\"link\":\"/guide/prepare/understand\"}]},{\"text\":\"🌱 新手上路\",\"items\":[{\"text\":\"💾 基础安装\",\"items\":[{\"text\":\"安装前的准备\",\"link\":\"/guide/rookie/pre-install\"},{\"text\":\"虚拟机安装前的准备\",\"link\":\"/guide/rookie/pre-virt\"},{\"text\":\"archlinux 基础安装\",\"link\":\"/guide/rookie/basic-install\"},{\"text\":\"基础安装详解\",\"link\":\"/guide/rookie/basic-install-detail\"}]},{\"text\":\"🔩 进阶安装\",\"items\":[{\"text\":\"桌面环境与常用应用安装\",\"link\":\"/guide/rookie/desktop-env-and-app\"},{\"text\":\"显卡驱动\",\"link\":\"/guide/rookie/graphic-driver\"},{\"text\":\"透明代理\",\"link\":\"/guide/rookie/transparent\"}]}]},{\"text\":\"🛠️ 进阶话题\",\"items\":[{\"text\":\"⚙️ 可选配置\",\"items\":[{\"text\":\"可选配置（基础篇）\",\"link\":\"/guide/advanced/optional-cfg-1\"},{\"text\":\"可选配置（进阶篇）\",\"link\":\"/guide/advanced/optional-cfg-2\"},{\"text\":\"功耗控制\",\"link\":\"/guide/advanced/power-ctl\"}]},{\"text\":\"🌸 系统美化\",\"items\":[{\"text\":\"系统美化（布局）\",\"link\":\"/guide/advanced/beauty-1\"},{\"text\":\"系统美化（主题）\",\"link\":\"/guide/advanced/beauty-2\"},{\"text\":\"系统美化（终端）\",\"link\":\"/guide/advanced/beauty-3\"}]},{\"text\":\"🧰 系统管理\",\"items\":[{\"text\":\"合格的系统管理员\",\"link\":\"/guide/advanced/system-ctl\"},{\"text\":\"常见问题\",\"link\":\"/guide/advanced/debug\"},{\"text\":\"制作系统盘\",\"link\":\"/guide/advanced/make-install-disk\"},{\"text\":\"Btrfs 相关\",\"link\":\"/guide/advanced/btrfs\"}]}]}],\"/app/\":[{\"text\":\"💽 常用软件\",\"items\":[{\"text\":\"📐 日常办公\",\"items\":[{\"text\":\"常用软件\",\"link\":\"/app/common/daily\"},{\"text\":\"聊天通讯\",\"link\":\"/app/common/communication\"},{\"text\":\"办公软件\",\"link\":\"/app/common/office\"},{\"text\":\"多屏协同\",\"link\":\"/app/common/collaboration\"}]},{\"text\":\"🎯 其它内容\",\"items\":[{\"text\":\"视频影音\",\"link\":\"/app/common/media\"},{\"text\":\"游戏娱乐\",\"link\":\"/app/common/play\"},{\"text\":\"远程连接\",\"link\":\"/app/common/remote\"},{\"text\":\"安卓刷机\",\"link\":\"/app/common/android\"}]}]},{\"text\":\"🔬 专有领域\",\"items\":[{\"text\":\"🎹 媒体创作\",\"items\":[{\"text\":\"视频制作\",\"link\":\"/app/exclusive/video\"},{\"text\":\"图像制作\",\"link\":\"/app/exclusive/image\"},{\"text\":\"音频制作\",\"link\":\"/app/exclusive/audio\"},{\"text\":\"其它内容\",\"link\":\"/app/exclusive/media\"}]},{\"text\":\"🖥️ 信息技术\",\"items\":[{\"text\":\"编程软件\",\"link\":\"/app/exclusive/code\"}]}]}]},\"siteTitle\":false,\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/nakanomikuorg/arch-guide\"}]},\"locales\":{},\"scrollOffset\":134,\"cleanUrls\":false}");</script>
+    
   </body>
 </html>
